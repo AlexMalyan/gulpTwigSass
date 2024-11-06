@@ -1,0 +1,23 @@
+<aside class="sidebar sidebar__sticky">
+    <div class="sidebar__welcome">
+    <div class="sidebar__inner">
+        <div class="sidebar__i sidebar__icon">
+        <svg class="svg-plumber-dims">
+                            <use xlink:href="./svg/sprite.svg#plumber"></use>
+                        </svg>
+        </div>
+        <h1 class="sidebar__h1">Сборка Gulp</h1>
+        <p class="sidebar__p">Новый быстрый сборщик с TWIG.JS</p>
+    </div>
+    </div>
+    <nav class="sidebar__nav">
+    <ul class="sidebar__list">
+    {% for item in menu %}
+        <li class="sidebar__item"><a href="{{ item.link }}" class="sidebar__link">
+            {{ item.title }}
+        </a>
+        </li>
+    {% endfor %}
+    </ul>
+    </nav>
+  </aside>

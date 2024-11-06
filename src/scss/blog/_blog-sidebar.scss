@@ -1,0 +1,95 @@
+@use 'blog-vars' as *;
+// @debug $theme-color;
+
+.sidebar {
+  grid-area: sidebar;
+
+  // .sidebar__sticky
+
+  &__sticky {
+    // position: fixed;
+    padding: 0 20px;
+  }
+
+  // .sidebar__welcome
+
+  &__welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $theme-color;
+    padding: 35px 0;
+    border-radius: 12px;
+    @include shadow;
+  }
+
+  // .sidebar__inner
+
+  &__inner {
+    text-align: center;
+  }
+
+  // .sidebar__i
+
+  &__i {}
+
+  // .sidebar__icon
+
+  &__icon {}
+
+  // .sidebar__h1
+
+  &__h1 {
+    color: $light-text-color;
+    font-size: 60px;
+  }
+
+  // .sidebar__p
+
+  &__p {
+    color: $mute-text-color;
+    font-size: 24px;
+  }
+
+  // .sidebar__nav
+
+  &__nav {
+    background-color: $grey-color;
+    @include bdr;
+    @include shadow;
+    margin: 20px 0;
+    padding: 40px;
+  }
+
+  // .sidebar__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+
+    list-style: none;
+    padding-left: 0;
+  }
+
+  // .sidebar__item
+
+  &__item {
+    @include border($light-text-color);
+    @include bdr;
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  // .sidebar__link
+
+  &__link {
+    display: block;
+    color: $light-text-color;
+    font-size: 22px;
+    text-decoration: none;
+  }
+}

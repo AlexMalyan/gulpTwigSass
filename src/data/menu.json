@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Галерея",
+    "link": "gallery.html"
+  },
+  {
+    "title": "Посты",
+    "link": "posts.html"
+  },
+  {
+    "title": "О Мне",
+    "link": "about.html"
+  },
+  {
+    "title": "Контакты",
+    "link": "contacts.html"
+  }
+]

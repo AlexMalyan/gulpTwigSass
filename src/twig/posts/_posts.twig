@@ -1,0 +1,20 @@
+<section class="main__content">
+{% for post in posts %}
+  <article class="main__post">
+    <div class="main__post-box-left">
+    <div class="main__post-date">
+    {{ post.date}}
+    </div>
+    <div class="main__post-block">
+    <img  class="main__post-img" src="{{ post.image }}" alt="{{ post.title }}">
+   </div>  
+    </div>
+    <div class="main__post-box main__post-box--content">
+    <h2 class="main__post-title">{{ post.title }}</h2>
+    <div class="main__post-p">{{ post.content }}</div>
+    <a href="" class="main__post-link">Читать дальше</a>
+    </div>
+  </article>
+{% endfor %}
+  
+</section>
