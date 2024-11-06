@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SVG &lt;symbol&gt; sprite preview | svg-sprite</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                color: #666;
+                background: #fafafa;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+
+            header {
+                display: block;
+                padding: 3em 3em 2em;
+                background-color: #fff;
+            }
+
+            header p {
+                margin: 2em 0 0;
+            }
+
+            section {
+                border-top: 1px solid #eee;
+                padding: 2em 3em 0;
+            }
+
+            section ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            section li {
+                display: inline-block;
+                background-color: #fff;
+                position: relative;
+                margin: 0 2em 2em 0;
+                vertical-align: top;
+                border: 1px solid #ccc;
+                padding: 1em 1em 3em;
+                cursor: default;
+            }
+
+            .icon-box {
+                margin: 0;
+                width: 144px;
+                height: 144px;
+                position: relative;
+                background: #ccc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath fill='%23fff' d='M6 0h6v6H6zM0 6h6v6H0z'/%3E%3C/svg%3E") top left repeat;
+                border: 1px solid #ccc;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            .icon {
+                display: inline-block;
+            }
+
+            h1 {
+                margin-top: 0;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: 1em;
+                font-weight: 400;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                position: absolute;
+                left: 1em;
+                right: 1em;
+                bottom: 1em;
+            }
+
+            footer {
+                display: block;
+                margin: 0;
+                padding: 0 3em 3em;
+            }
+
+            footer p {
+                margin: 0;
+                font-size: .7em;
+            }
+
+            footer a {
+                color: #0f7595;
+                margin-left: 0;
+            }
+        </style>
+
+<!--
+Sprite shape dimensions
+====================================================================================================
+You will need to set the sprite shape dimensions via CSS when you use them as inline SVG, otherwise
+they would become a huge 100% in size. You may use the following dimension classes for doing so.
+They might well be outsourced to an external stylesheet of course.
+-->
+
+<style>
+ .svg-plumber-dims { width: 32px; height: 32px; }
+</style>
+
+<!--
+====================================================================================================
+-->
+
+    </head>
+    <body>
+
+<!--
+Inline <symbol> SVG sprite
+====================================================================================================
+This is an inlined version of the generated SVG sprite. The single images may be <use>d everywhere
+below within this document. Please see
+
+    https://github.com/svg-sprite/svg-sprite/blob/main/docs/configuration.md#defs--symbol-mode
+
+for further details on how to create this embeddable sprite variant.
+-->
+
+<svg width="0" height="0" style="position:absolute">
+     <symbol viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" id="plumber" xmlns="http://www.w3.org/2000/svg"><path style="fill:#35d8b9" d="M353.661 230.426 256 89.713l-97.661 140.713c-32.788 47.241-27.06 111.178 13.602 151.84 46.424 46.425 121.693 46.425 168.118 0 40.662-40.662 46.389-104.598 13.602-151.84z"/><path style="fill:#2bbfa3" d="M226.081 382.266c-14.473-40.662-16.511-104.599-4.841-151.84L256 89.713l-97.661 140.713c-32.788 47.241-27.06 111.178 13.602 151.84 23.213 23.213 53.635 34.819 84.059 34.819-10.828 0-21.657-11.606-29.919-34.819z"/><path style="fill:#333" d="M256 426.421c-32.848 0-65.696-12.503-90.703-37.51-43.916-43.915-50.087-112.821-14.677-163.842l97.661-140.713a9.396 9.396 0 0 1 15.44 0l97.661 140.713c35.41 51.022 29.237 119.927-14.677 163.842-25.009 25.007-57.857 37.51-90.705 37.51zm0-320.228-89.941 129.591c-30.223 43.546-24.955 102.357 12.527 139.838 42.687 42.687 112.143 42.685 154.83 0 37.481-37.481 42.751-96.292 12.527-139.838L256 106.193z"/><path style="fill:#fff" d="M317.912 369.515a9.365 9.365 0 0 1-6.644-2.752 9.395 9.395 0 0 1 0-13.288c26.758-26.758 30.519-68.745 8.943-99.832l-18.937-27.284c-2.958-4.263-1.902-10.118 2.362-13.077a9.396 9.396 0 0 1 13.077 2.362l18.937 27.284c26.764 38.564 22.099 90.644-11.094 123.836a9.37 9.37 0 0 1-6.644 2.751z"/><path style="fill:#f4550f" d="M256 512C114.841 512 0 397.159 0 256S114.841 0 256 0s256 114.841 256 256-114.841 256-256 256zm0-493.207C125.204 18.793 18.793 125.204 18.793 256S125.204 493.207 256 493.207 493.207 386.796 493.207 256 386.796 18.793 256 18.793z"/><circle style="fill:#fff" cx="289.569" cy="193.012" r="9.396"/></symbol>
+</svg>
+
+<!--
+====================================================================================================
+-->
+
+        <header>
+            <h1>SVG <code>&lt;symbol&gt;</code> sprite preview</h1>
+            <p>This preview features two methods of using the generated sprite in conjunction with inline SVG. Please have a look at the HTML source for further details and be aware of the following constraints:</p>
+            <ul>
+                <li>Your browser has to <a href="https://caniuse.com/svg-html5" target="_blank" rel="noopener noreferrer">support inline SVG</a> for these techniques to work.</li>
+                <li>The embedded sprite (A) slightly differs from the generated external one. Please <a href="https://github.com/svg-sprite/svg-sprite/blob/main/docs/configuration.md#defs--symbol-mode" target="_blank" rel="noopener noreferrer">see the documentation</a> for details on how to create such an embeddable sprite.</li>
+            </ul>
+        </header>
+        <section>
+
+<!--
+A) Inline SVG with embedded sprite
+====================================================================================================
+These SVG images make use of fragment identifiers (IDs) and are extracted out of the inline sprite
+embedded above. They may be styled via CSS.
+-->
+
+            <h3>A) Inline SVG with embedded sprite</h3>
+            <ul>
+
+             <li title="plumber">
+                    <div class="icon-box">
+                        <svg class="svg-plumber-dims">
+                            <use xlink:href="#plumber"></use>
+                        </svg>
+                    </div>
+                    <h2>plumber, </h2>
+                </li>
+         </ul>
+
+<!--
+====================================================================================================
+-->
+
+        </section>
+        <section>
+
+<!--
+B) Inline SVG with external sprite
+====================================================================================================
+These SVG images make use of an URL + fragment identifiers (IDs) and refer to the regular external
+SVG sprite. They may be styled via CSS.
+-->
+
+            <h3>B) Inline SVG with external sprite</h3>
+            <ul>
+
+             <li title="plumber">
+                    <div class="icon-box">
+                        <svg class="svg-plumber-dims">
+                            <use xlink:href="../sprite.svg#plumber"></use>
+                        </svg>
+                    </div>
+                    <h2>plumber</h2>
+                </li>
+         </ul>
+
+<!--
+====================================================================================================
+-->
+
+        </section>
+        <footer>
+            <p>Generated at Wed, 06 Nov 2024 19:26:58 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+        </footer>
+    </body>
+</html>
