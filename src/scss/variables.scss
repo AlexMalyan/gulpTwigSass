@@ -1,0 +1,101 @@
+:root {
+  // Main vars
+  --container-width: 1440px;
+
+  /* padding */
+  --padding-side: 15px;
+
+  /* spacing */
+  --space-small: 6px;
+  --space-medium: 16px;
+  --space-large: 24px;
+
+
+  /* COLORS */
+  --primary-color: #546de5;
+  --primary-color-dark: #1c36b8;
+  --primary-color-grey: #ebebeb;
+  --primary-color-darken: #2b6f90;
+  --primary-color-light: #6bbbda;
+  --primary-color-lighter: #8de3ff;
+  --primary-color-pink: #e94fba;
+  --primary-color-orange: rgb(255, 96, 103);
+  --primary-color-orange-rgb: 255, 96, 103;
+  --primary-color-yellow: #ffa600;
+  --primary-color-dark: #0d0d0d;
+  --primary-color-darker: #0a0a0a;
+  --primary-color-darkest: #080808;
+
+  --secondary-color-grey: #bdb9b9;
+  --secondary: 218, 220, 222;
+
+  /* text */
+
+
+  --text-primary-color: #546ce5;
+  --text-primary-color-rgb: 84, 108, 229;
+  --text-color-accent: var(--primary-color-pink);
+  --text-color-white: #FFFFFF;
+  --text-color-grey: #424242;
+  --text-color-dark: #000000;
+  --text-color-dark-rgb: 69, 73, 80;
+
+  /* bg */
+  --bg-color-white: #F6F6F6;
+  --bg-color-accent: var(--primary-color-grey);
+  --bg-color-white-transparent: rgb(255, 255, 255);
+  --bg-color-grey-transparent: 232, 233, 234;
+  --bg-backdrop: rgba(0, 0, 0, 0.5)
+    /* border */
+    --border-color-grey: var(--primary-color-grey);
+
+  --border-radius: 12px;
+
+  /* font */
+  --font-family: 'Inter', sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --font-size-small: 13px;
+  --font-size-medium: 14px;
+  --font-size-large: 16px;
+  --font-size-title: 24px;
+
+  --font-line-height-small: 16px;
+  --font-line-height-medium: 24px;
+  --font-line-height-large: 32px;
+
+  --font-letter-spacing-small: 0.15px;
+  --font-letter-spacing-medium: 0.2px;
+  --font-letter-spacing-large: 0.25px;
+
+
+  /* transition */
+  --transition-duration: 0.3s;
+  --transition-timing-function: ease-in-out;
+
+
+  /* shadow */
+
+  --shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+
+
+  --shadow-hover: 0 2px 8px #bfbfbf;
+
+  /* size */
+
+  --header-height: 80px;
+  --icon-width: 20px;
+  --radius: 12px;
+}
+
+$background-color-btn: #546DE5;
+$background-color-btn-hover: #080808;
+
+$bg-color-white: #F6F6F6;
+$primary-color-darken: #2b6f90;
+$primary-color-light: #6bbbda;
+$primary-color-lighter: #8de3ff;
+$primary-color-pink: #e94fba;

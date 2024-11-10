@@ -1,2 +1,12 @@
-@use 'svg/svg';
-@use 'blog/blog-page';
+@use 'normalize';
+@use 'base';
+
+@use 'fonts/fonts';
+
+@use 'header';
+@use 'categories';
+@use 'brands';
+@use 'futures-products';
+
+
+@use 'footer';

@@ -1,0 +1,63 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+
+.card {
+  border: 1px solid var(--bg-color-grey-transparent);
+  background: var(--bg-color-white-transparent);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+  transition: box-shadow var(--transition-duration);
+  padding: var(--space-large);
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:hover {
+    box-shadow: var(--shadow-hover);
+    // border-color: transparent;
+  }
+
+  // .card__image-box
+
+  &__image-box {}
+
+  // .card__image
+
+  &__image {}
+
+  // .card__content
+
+  &__content {
+    padding: var(--space-medium);
+  }
+
+  // .card__title
+
+  &__title {}
+
+  // .card__price
+
+  &__price {
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px 0;
+  }
+
+  // .card__price-value
+
+  &__price-value {}
+
+  // .card__cart-button
+
+  &__cart-button {
+    width: 100%;
+    @include m.button(v.$background-color-btn,
+      v.$background-color-btn-hover,
+      var(--text-color-white),
+      var(--border-radius));
+  }
+}

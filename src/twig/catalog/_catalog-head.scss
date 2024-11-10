@@ -1,0 +1,38 @@
+.catalog-head {
+  // .catalog-head__inner
+
+  &__inner {
+    background-image: url(../images/catalog/catalog.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--border-radius);
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 100px;
+  }
+
+  // .catalog-head__title
+
+  &__title {
+    padding: 20px 0;
+    font-size: clamp(24px, 5vw, 48px);
+    line-height: 130%;
+    @include font-family(Manrope Bold, 700);
+  }
+}
+
+.breadcrumbs {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-duration);
+
+  &:hover {
+    color: var(--primary-color);
+  }
+
+  // .breadcrumbs__separator
+}

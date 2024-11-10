@@ -1,0 +1,36 @@
+<!--1=include popular-categories.html -->
+<section class="pc section-block">
+	<div class="container-xl">
+		<header class="header-block">
+			<h2 class="header-block__title">Популярные категории</h2>
+			<a href="#" class="header-block__link-button">
+				Все категории
+				<span>></span>
+			</a>
+		</header>
+		<div
+			class="popular-categories-grid ">
+			<!--=include _pc-card.html -->
+			{% for item in categories %}
+				<article class="category-card">
+					<a href=" {{  item.url }}.html" class="category-card__link">
+						<h3 class="category-card__title">{{  item.title }}
+
+						</h3>
+						<div class="category-card__image-box">
+							<img src="https://via.assets.so/game.jpg?w=700&h=700" alt="">
+						{# <img
+																			src="https://images.placeholders.dev/?width=700&height=700" alt="_pc-card"> #}
+							{# <picture>
+																																																									<source srcset="images/categories/image_48.webp" type="image/webp">
+																																																									<source srcset="images/categories/image_48.png" type="image/jpeg">
+																																																									<img src="https://images.placeholders.dev/?width=700&height=700" alt="_pc-card">
+																																																								</picture> #}
+							{# <img class="category-card__image" src="" alt=""> #}
+						</div>
+					</a>
+				</article>
+			{% endfor %}
+		</div>
+	</div>
+</section>

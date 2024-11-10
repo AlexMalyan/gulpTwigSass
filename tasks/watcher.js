@@ -26,6 +26,7 @@ const browsersync = () => {
   watch('./src/js/**/*', scripts).on('change', browserSync.reload);
   watch('./src/twig/**/*', twig).on('change', browserSync.reload);
   watch('./src/images/**/*', browserSync.reload);
+  watch('./src/svg/*.svg', browserSync.reload);
   watch('./src/fonts/**/*', browserSync.reload);
 }
 

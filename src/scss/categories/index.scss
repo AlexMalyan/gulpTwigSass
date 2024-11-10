@@ -1,0 +1,42 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.popular-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  background: rgb(246, 246, 246);
+
+  &:hover {
+    filter: brightness(.9);
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  // .category-card__title
+
+  &__title {
+    @include fluid-text(18, 26);
+    margin: 12px 0;
+  }
+
+  // .category-card__image-box
+
+  &__image-box {}
+
+  // .category-card__image
+
+  &__image {}
+}

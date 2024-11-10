@@ -1,18 +1,79 @@
-[
   {
-    "title": "Галерея",
-    "link": "gallery.html"
-  },
-  {
-    "title": "Посты",
-    "link": "posts.html"
-  },
-  {
-    "title": "О Мне",
-    "link": "about.html"
-  },
-  {
-    "title": "Контакты",
-    "link": "contacts.html"
+    "top": [
+      {
+        "title": "Бренды",
+        "link": "brands.html"
+      },
+      {
+        "title": "Доставка",
+        "link": "delivery.html"
+      },
+      {
+        "title": "Возврат",
+        "link": "return.html"
+      },
+      {
+        "title": "Документация",
+        "link": "docs.html"
+      },
+      {
+        "title": "Контакты",
+        "link": "contacts.html"
+      }
+    ],
+    "middle": [
+      {
+        "id": "orders",
+        "title": "Заказы",
+        "link": "orders"
+      },
+      {
+        "id": "cart",
+        "title": "Корзина",
+        "link": "cart"
+      },
+      {
+        "id": "profile",
+        "title": "Войти",
+        "link": "profile"
+      }
+    ],
+    "bottom": [
+      {
+        "title": "Акции",
+        "link": "actions.html"
+      },
+      {
+        "title": "Строительные материалы",
+        "link": "materials.html"
+      },
+      {
+        "title": "Керамическая плитка",
+        "link": "catalog.html"
+      },
+      {
+        "title": "Краски",
+        "link": "catalog.html"
+      },
+      {
+        "title": "Сантехника",
+        "link": "catalog.html"
+      },
+      {
+        "title": "Напольные покрытия",
+        "link": "catalog.html"
+      },
+      {
+        "title": "Инструменты",
+        "link": "catalog.html"
+      },
+      {
+        "title": "Обои",
+        "link": "catalog.html"
+      },
+      {
+        "title": "Окна",
+        "link": "catalog.html"
+      }
+    ]
   }
-]

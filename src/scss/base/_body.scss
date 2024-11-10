@@ -1,0 +1,10 @@
+@use 'mixins' as *;
+
+body {
+  @include font-family("Inter Regular", 400);
+  @include fluid-text(18, 16);
+
+  line-height: 1.28;
+  margin: 0;
+  padding: 0;
+}

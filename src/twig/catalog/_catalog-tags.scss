@@ -1,0 +1,38 @@
+.catalog-tags {
+  // .catalog-tags__tag
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding: var(--space-large) 0;
+
+  &__tag {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 3px 3px;
+    background-color: var(--bg-color-white);
+    border: 1px solid var(--border-color-grey);
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition-duration);
+
+    &:hover {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+  }
+
+  // .catalog-tags__text
+
+  &__text {
+    @include font-family(Manrope, 400);
+    font-size: 16px;
+    color: var(--text-color-dark);
+    transition: var(--transition-duration);
+
+    &:hover {
+      color: var(--text-color-white);
+    }
+  }
+}

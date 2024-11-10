@@ -1,6 +1,24 @@
 {# index.twig #}
 {% extends "../layouts/base.twig" %}
- 
+
 {% block page %}
- {% include "../posts/_posts.twig" %}
+	<!-- 1=include banner.html -->
+	<main
+		class="main">
+		<!--1=include stocks.html -->
+
+		{% include "../categories/popular-categories.twig" with {
+	categories: block_categories.categories
+ }%}
+		<!--1=include futures-products.html -->
+		{% include '../futures-products/futures-products.twig' with {
+			pf: products
+		} %}
+
+		{% include "../brands/brands.twig" %}
+	<!--1=include about.html -->
+		<!--1=include catalog.html -->
+		<!--1=include refund.html -->
+	</main>
+
 {% endblock %}

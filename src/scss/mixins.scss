@@ -1,0 +1,215 @@
+@use "sass:math";
+
+// FONTS
+@mixin font-family($font-family: "Manrope Regular", $font-weight: 400) {
+  font-family: $font-family, sans-serif;
+  font-weight: $font-weight;
+}
+
+// TEXT
+
+@mixin fluid-text($max: 48, $min: 16) {
+  font-size: clamp(#{$min}px, #{math.div($max, 1440) * 100}vw, #{$max}px);
+}
+
+// FLEX
+
+@mixin flex-center($isInline: false) {
+  @if ($isInline) {
+    display: inline-flex;
+  }
+
+  @else {
+    display: flex;
+  }
+
+  justify-content: center;
+  align-items: center;
+}
+
+// ABSOLUTE
+@mixin abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// SQUARE
+@mixin square($size) {
+  width: $size;
+  aspect-ratio: 1 / 1;
+}
+
+// INPUTS
+@mixin reset-input {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+// BUTTONS
+@mixin reset-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@mixin button($background-color: transparent,
+  $background-color-hover: $background-color-btn-hover,
+  $text-color: inherit,
+  $border-radius: 5px,
+  $border: none,
+  $border-color: none,
+  $padding: 10px 20px) {
+  display: inline-block;
+  padding: $padding;
+  border: $border;
+  border-radius: $border-radius;
+  background-color: $background-color;
+  color: $text-color;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $background-color-hover;
+  }
+
+  &:active {
+    background-color: $background-color-hover;
+    transform: translateY(2px);
+  }
+}
+
+/* 
+$border: none, 
+$background-color-hover: transparent,
+ $color: inherit, 
+ $font-size: var(--font-size-large), 
+ $padding: 10px 20px
+*/
+
+@mixin button-plain($border: none,
+  $background-color-hover: transparent,
+  $color: inherit,
+  $font-size: var(--font-size-large),
+  $padding: 10px 20px) {
+  display: inline-block;
+  padding: $padding;
+  font-size: $font-size;
+  color: $color;
+  border: $border;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s ease;
+
+  &:hover {
+    text-decoration: underline;
+    background-color: $background-color-hover;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// IMAGES
+@mixin reset-img {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+@mixin fluid-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+// MEDIA QUERIES
+@mixin mediaBg() {
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (max-width: 1220px) {
+    @content;
+  }
+}
+
+@mixin mobile($mobile-width: 820px) {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+
+$desktop-above: 1281px;
+$desktop: 1280px;
+
+$tablet-above: 1024px;
+$tablet: 1023px;
+
+$mobile-above: 768px;
+$mobile: 767px;
+
+// above - выше
+
+@mixin desktop-above {
+  @media (min-width: $desktop-above) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin tablet-above {
+  @media (min-width: $tablet-above) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobile-above {
+  @media (min-width: $mobile-above) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      @content;
+    }
+  }
+
+
+}

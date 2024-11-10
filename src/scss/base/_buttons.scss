@@ -1,0 +1,61 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+/* кнопка */
+.btn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+
+  /* переопределение стилей для ссылок */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  /* небольшие вертикальные отступы */
+  margin: 2px 0;
+
+  /* невидимая рамка */
+  border: solid 1px transparent;
+  border-radius: 4px;
+
+  /* для установки размеров используем паддинги */
+  padding: 0.5em 1em;
+
+  /* контрастные цвета */
+  color: var(--text-color-white);
+  background-color: var(--primary-color);
+
+  &-reset {
+    @include reset-button;
+  }
+}
+
+.arrow-up {
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-width: 0 5px 10px 5px;
+    border-color: transparent transparent #fff transparent;
+  }
+}
+
+.dotted {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 1px dotted #ababab;
+  margin-top: 14px;
+  width: 100%;
+  z-index: 0;
+}

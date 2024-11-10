@@ -1,0 +1,8 @@
+@use 'fontsMixins' as *;
+
+$fontName: 'inter';
+
+@include font-face($fontName Regular, #{$fontName}-Regular);
+@include font-face($fontName Italic, #{$fontName}-Italic, 300);
+@include font-face($fontName Medium, #{$fontName}-Medium, 500);
+@include font-face($fontName SemiBold, #{$fontName}-SemiBold, 700);

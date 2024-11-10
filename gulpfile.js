@@ -6,7 +6,7 @@ const tasks = requireDir('./tasks');
 // console.log(tasks.copyResources);
 
 // exports.fonts = tasks.copyResources.copyFonts
-// exports.svg = tasks.copyResources.copySvg
+exports.svg = tasks.copyResources.copySvg
 
 // // exports.test = tasks.test
 // exports.clean = tasks.clean;

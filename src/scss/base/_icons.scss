@@ -1,0 +1,17 @@
+@use 'variables' as *;
+
+.icon {
+  width: var(--icon-width);
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border-radius: var(--border-radius);
+  // background-color: var(--color-grey-light);
+
+  & svg {
+    fill: currentColor;
+    width: 100%;
+    height: 100%;
+  }
+}

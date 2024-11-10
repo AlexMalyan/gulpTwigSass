@@ -1,0 +1,40 @@
+<section class="fp section-block">
+	<div class="container-xl">
+		<header class="header-block">
+			<h2 class="header-block__title">Популярные товары</h2>
+		</header>
+		<div class="fp__grid">
+			{% for item in pf %}
+				{# <pre>
+								{{ dump(item.images[0]) }}
+								</pre> #}
+				<article class="card">
+					<div class="card__image-box">
+						<img class="card__image" src="./{{ item.images[0] }}.jpg" alt=""/>
+					</div>
+					<div class="card__content">
+						<div class="card__title">
+							{{ item.name }}
+
+						</div>
+						<div class="card__price">
+							<span class="card__price-value">{{ item.price }}
+							</span>
+						</div>
+						<button class="card__cart-button">В корзину</button>
+					</div>
+				</article>
+			{% endfor %}
+			<!--=include futures-products_card.html -->
+		<!--=include futures-products_card.html -->
+			<!--=include futures-products_card.html -->
+			<!--=include futures-products_card.html -->
+			<!--=include futures-products_card.html -->
+			<!--=include futures-products_card.html -->
+			<!--=include futures-products_card.html -->
+			<!--=include futures-products_card.html -->
+			<!--=include futures-products_card.html -->
+			<!--=include futures-products_card.html -->
+		</div>
+	</div>
+</section>

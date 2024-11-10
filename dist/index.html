@@ -1,132 +1,671 @@
 
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="description" content="A demo of how to use gulp-twig"/>
-    <meta name="author" content="Simon de Turck"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="ru">
 
-    <link rel="stylesheet" href="css/style.min.css">
- 
-    <title>Ура Сашуля у тебя получилось!</title>
- 
-</head>
-<body class="main-grid">
- <aside class="sidebar sidebar__sticky">
-    <div class="sidebar__welcome">
-    <div class="sidebar__inner">
-        <div class="sidebar__i sidebar__icon">
-        <svg class="svg-plumber-dims">
-                            <use xlink:href="./svg/sprite.svg#plumber"></use>
-                        </svg>
-        </div>
-        <h1 class="sidebar__h1">Сборка Gulp</h1>
-        <p class="sidebar__p">Новый быстрый сборщик с TWIG.JS</p>
-    </div>
-    </div>
-    <nav class="sidebar__nav">
-    <ul class="sidebar__list">
-    
-        <li class="sidebar__item"><a href="gallery.html" class="sidebar__link">
-            Галерея
-        </a>
-        </li>
-    
-        <li class="sidebar__item"><a href="posts.html" class="sidebar__link">
-            Посты
-        </a>
-        </li>
-    
-        <li class="sidebar__item"><a href="about.html" class="sidebar__link">
-            О Мне
-        </a>
-        </li>
-    
-        <li class="sidebar__item"><a href="contacts.html" class="sidebar__link">
-            Контакты
-        </a>
-        </li>
-    
-    </ul>
-    </nav>
-  </aside>
-<main class="main gradient-background">
- 
- <section class="main__content">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<link rel="stylesheet" href="css/style.min.css"/>
+		<title>
+			
+				Магазин сантехники | Труба@Гайка
+			
+		</title>
+	</head>
 
-  <article class="main__post">
-    <div class="main__post-box-left">
-    <div class="main__post-date">
-    October 19, 2019
-    </div>
-    <div class="main__post-block">
-    <img  class="main__post-img" src="images/posts/twig.webp" alt="Twig Гибкий, быстрый и безопасный движок шаблонов для PHP">
-   </div>  
-    </div>
-    <div class="main__post-box main__post-box--content">
-    <h2 class="main__post-title">Twig Гибкий, быстрый и безопасный движок шаблонов для PHP</h2>
-    <div class="main__post-p">Быстро: Twig компилирует шаблоны в простой оптимизированный PHP-код. Накладные расходы по сравнению с обычным PHP-кодом были сведены к минимуму. Безопасность: Twig имеет режим песочницы для оценки ненадёжного кода шаблонов. Это позволяет использовать Twig в качестве языка шаблонов для приложений, в которых пользователи могут изменять дизайн шаблонов. Гибкость: Twig работает на основе гибкого лексера и парсера. Это позволяет разработчику определять собственные теги и фильтры и создавать собственный DSL.</div>
-    <a href="" class="main__post-link">Читать дальше</a>
-    </div>
-  </article>
+	<body>
+		
+			<header class="header">
+	
+	<!--=include top.html -->
+		<div class="header__top "> <div class="container header__top-inner">
+			<div class="header__top-location">
+				<svg class="header__top-location-icon">
+					<use xlink:href="images/sprite.svg#location"></use>
+				</svg>
+				<span class="header__top-location-text">Москва</span>
+			</div>
+			<ul class="header__top-nav">
+				
+			</ul>
+		</div>
+	</div>
 
-  <article class="main__post">
-    <div class="main__post-box-left">
-    <div class="main__post-date">
-    06 ноября 2024
-    </div>
-    <div class="main__post-block">
-    <img  class="main__post-img" src="images/posts/json.webp" alt="GULP-DATA хранение информации">
-   </div>  
-    </div>
-    <div class="main__post-box main__post-box--content">
-    <h2 class="main__post-title">GULP-DATA хранение информации</h2>
-    <div class="main__post-p"> Данные Gulp - это способ хранения и извлечения данных в задачах Gulp. Вы можете использовать плагин gulp-data для хранения данных в файле JSON и извлечения их в своих задачах Gulp.</div>
-    <a href="" class="main__post-link">Читать дальше</a>
-    </div>
-  </article>
+	
+	<!--=include middle.html -->
+	<div class="container-xl">
+		<div class="header__middle ">
+			<a class="header__logo" href="/"></a>
+			<button type="button" class="btn header__menu-button">
+				<span class="header__menu-button-burger"></span>
+				<span class="header__menu-button-text">Каталог</span>
+			</button>
+			<div class="header__search">
+				<input class="header__search-input" type="text" placeholder="Поиск по каталогу">
+				<button class="btn header__search-button">
+					<span class="icon">
+						<svg>
+							<use xlink:href="svg/sprite.svg#search"></use>
+						</svg>
+					</span>
 
-  <article class="main__post">
-    <div class="main__post-box-left">
-    <div class="main__post-date">
-    06 ноября 2024
-    </div>
-    <div class="main__post-block">
-    <img  class="main__post-img" src="images/posts/sass.webp" alt="Sass — это самый зрелый, стабильный и мощный профессиональный язык расширения CSS в мире.">
-   </div>  
-    </div>
-    <div class="main__post-box main__post-box--content">
-    <h2 class="main__post-title">Sass — это самый зрелый, стабильный и мощный профессиональный язык расширения CSS в мире.</h2>
-    <div class="main__post-p">Sass полностью совместим со всеми версиями CSS. Мы серьёзно относимся к этой совместимости, чтобы вы могли без проблем использовать любые доступные библиотеки CSS . Sass может похвастаться большим количеством функций и возможностей, чем любой другой язык CSS. Команда разработчиков Sass Core проделала огромную работу, чтобы не только не отставать, но и быть на шаг впереди.</div>
-    <a href="" class="main__post-link">Читать дальше</a>
-    </div>
-  </article>
+				</button>
+			</div>
 
-  <article class="main__post">
-    <div class="main__post-box-left">
-    <div class="main__post-date">
-    06 ноября 2024
-    </div>
-    <div class="main__post-block">
-    <img  class="main__post-img" src="images/posts/fonts.webp" alt="Компиляция Шрифтов">
-   </div>  
-    </div>
-    <div class="main__post-box main__post-box--content">
-    <h2 class="main__post-title">Компиляция Шрифтов</h2>
-    <div class="main__post-p">Создайте папку 'FONTS' и положите туда свои шрифты для дальнейшей компиляции в современные шрифты</div>
-    <a href="" class="main__post-link">Читать дальше</a>
-    </div>
-  </article>
+			<div class="header__profile">
+				
+					<a href="orders.html" class="header__profile-item" id="orders">
+						<span class="header__profile-icon">
+							<span class="icon">
+								
+									<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+	<path d="M5 21a1.93 1.93 0 0 1-1.41-.59A1.93 1.93 0 0 1 3 19V6.5c0-.25.04-.47.13-.68.08-.2.19-.39.32-.57l1.4-1.7c.13-.18.3-.32.5-.41.2-.1.42-.14.65-.14h12c.23 0 .45.05.65.14.2.09.37.23.5.41l1.4 1.7c.13.18.24.38.32.57.09.2.13.43.13.68V19a1.93 1.93 0 0 1-.59 1.41A1.93 1.93 0 0 1 19 21H5Zm.4-15h13.2l-.85-1H6.25L5.4 6ZM5 19h14V8H5v11Z"></path>
+</svg>
 
-  
+								
+
+							</span>
+						</span>
+						<span class="header__profile-text">Заказы</span>
+					</a>
+				
+					<a href="cart.html" class="header__profile-item" id="cart">
+						<span class="header__profile-icon">
+							<span class="icon">
+								
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 22c-.55 0-1.02-.2-1.41-.59-.4-.39-.59-.86-.59-1.41 0-.55.2-1.02.59-1.41.39-.4.86-.59 1.41-.59.55 0 1.02.2 1.41.59.4.39.59.86.59 1.41 0 .55-.2 1.02-.59 1.41-.39.4-.86.59-1.41.59Zm10 0c-.55 0-1.02-.2-1.41-.59-.4-.39-.59-.86-.59-1.41 0-.55.2-1.02.59-1.41.39-.4.86-.59 1.41-.59.55 0 1.02.2 1.41.59.4.39.59.86.59 1.41 0 .55-.2 1.02-.59 1.41-.39.4-.86.59-1.41.59ZM6.15 6l2.4 5h7l2.75-5H6.15ZM5.2 4h14.75c.38 0 .68.17.88.51.2.34.2.69.02 1.04l-3.55 6.4A2 2 0 0 1 15.55 13H8.1L7 15h11c.28 0 .52.1.71.29.2.19.29.43.29.71 0 .28-.1.52-.29.71-.19.2-.43.29-.71.29H7c-.75 0-1.32-.33-1.7-.99a1.89 1.89 0 0 1-.05-1.96L6.6 11.6 3 4H2a.97.97 0 0 1-.71-.29A.97.97 0 0 1 1 3c0-.28.1-.52.29-.71.19-.2.43-.29.71-.29h1.63a1 1 0 0 1 .9.58L5.2 4Z"></path></svg>
+								
+
+							</span>
+						</span>
+						<span class="header__profile-text">Корзина</span>
+					</a>
+				
+					<a href="profile.html" class="header__profile-item" id="profile">
+						<span class="header__profile-icon">
+							<span class="icon">
+								
+									<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><path d="M30 49c0 18.7 15.3 34 34 34s34-15.3 34-34-15.3-34-34-34-34 15.3-34 34zm60 0c0 14.3-11.7 26-26 26S38 63.3 38 49s11.7-26 26-26 26 11.7 26 26zm-65.6 70.4C35 108.8 49 103 64 103s29 5.8 39.6 16.4l5.7-5.7C97.2 101.7 81.1 95 64 95s-33.2 6.7-45.3 18.7l5.7 5.7z"/></svg>
+								
+
+							</span>
+						</span>
+						<span class="header__profile-text">Войти</span>
+					</a>
+				
+
+			</div>
+		</div>
+	</div>
+
+	
+	<!--=include bottom.html -->
+	<div class="header__bottom">
+		<div class="container-xl header__bottom-inner ">
+			<nav class="header__bottom-nav">
+				
+					<a href="actions.html" class="header__bottom-nav-link">Акции</a>
+				
+					<a href="materials.html" class="header__bottom-nav-link">Строительные материалы</a>
+				
+					<a href="catalog.html" class="header__bottom-nav-link">Керамическая плитка</a>
+				
+					<a href="catalog.html" class="header__bottom-nav-link">Краски</a>
+				
+					<a href="catalog.html" class="header__bottom-nav-link">Сантехника</a>
+				
+					<a href="catalog.html" class="header__bottom-nav-link">Напольные покрытия</a>
+				
+					<a href="catalog.html" class="header__bottom-nav-link">Инструменты</a>
+				
+					<a href="catalog.html" class="header__bottom-nav-link">Обои</a>
+				
+					<a href="catalog.html" class="header__bottom-nav-link">Окна</a>
+				
+			</nav>
+		</div>
+	</div>
+</header>
+
+			<!--=include header.html -->
+		
+
+		
+	<!-- 1=include banner.html -->
+	<main
+		class="main">
+		<!--1=include stocks.html -->
+
+		<!--1=include popular-categories.html -->
+<section class="pc section-block">
+	<div class="container-xl">
+		<header class="header-block">
+			<h2 class="header-block__title">Популярные категории</h2>
+			<a href="#" class="header-block__link-button">
+				Все категории
+				<span>></span>
+			</a>
+		</header>
+		<div
+			class="popular-categories-grid ">
+			<!--=include _pc-card.html -->
+			
+				<article class="category-card">
+					<a href=" .html" class="category-card__link">
+						<h3 class="category-card__title">Power Tools
+
+						</h3>
+						<div class="category-card__image-box">
+							<img src="https://via.assets.so/game.jpg?w=700&h=700" alt="">
+						
+							
+							
+						</div>
+					</a>
+				</article>
+			
+				<article class="category-card">
+					<a href=" .html" class="category-card__link">
+						<h3 class="category-card__title">Hand Tools
+
+						</h3>
+						<div class="category-card__image-box">
+							<img src="https://via.assets.so/game.jpg?w=700&h=700" alt="">
+						
+							
+							
+						</div>
+					</a>
+				</article>
+			
+				<article class="category-card">
+					<a href=" .html" class="category-card__link">
+						<h3 class="category-card__title">Machine Tools
+
+						</h3>
+						<div class="category-card__image-box">
+							<img src="https://via.assets.so/game.jpg?w=700&h=700" alt="">
+						
+							
+							
+						</div>
+					</a>
+				</article>
+			
+				<article class="category-card">
+					<a href=" .html" class="category-card__link">
+						<h3 class="category-card__title">Power Machinery
+
+						</h3>
+						<div class="category-card__image-box">
+							<img src="https://via.assets.so/game.jpg?w=700&h=700" alt="">
+						
+							
+							
+						</div>
+					</a>
+				</article>
+			
+				<article class="category-card">
+					<a href=" .html" class="category-card__link">
+						<h3 class="category-card__title">Measurement
+
+						</h3>
+						<div class="category-card__image-box">
+							<img src="https://via.assets.so/game.jpg?w=700&h=700" alt="">
+						
+							
+							
+						</div>
+					</a>
+				</article>
+			
+				<article class="category-card">
+					<a href=" .html" class="category-card__link">
+						<h3 class="category-card__title">Clothes and PPE
+
+						</h3>
+						<div class="category-card__image-box">
+							<img src="https://via.assets.so/game.jpg?w=700&h=700" alt="">
+						
+							
+							
+						</div>
+					</a>
+				</article>
+			
+		</div>
+	</div>
 </section>
 
-</main>
-<footer class="footer">
-        <p>&copy;  </p>
-    </footer>
-    <script src="js/scripts.min.js"></script>
-</body>
+		<!--1=include futures-products.html -->
+		<section class="fp section-block">
+	<div class="container-xl">
+		<header class="header-block">
+			<h2 class="header-block__title">Популярные товары</h2>
+		</header>
+		<div class="fp__grid">
+			
+				
+				<article class="card">
+					<div class="card__image-box">
+						<img class="card__image" src="./images/products/product-1.jpg" alt=""/>
+					</div>
+					<div class="card__content">
+						<div class="card__title">
+							Electric Planer Brandix KL370090G 300 Watts
+
+						</div>
+						<div class="card__price">
+							<span class="card__price-value">749.00₽
+							</span>
+						</div>
+						<button class="card__cart-button">В корзину</button>
+					</div>
+				</article>
+			
+				
+				<article class="card">
+					<div class="card__image-box">
+						<img class="card__image" src="./images/products/product-2.jpg" alt=""/>
+					</div>
+					<div class="card__content">
+						<div class="card__title">
+							Undefined Tool IRadix DPS3000SY 2700 Watts
+
+						</div>
+						<div class="card__price">
+							<span class="card__price-value">1,019.00₽
+							</span>
+						</div>
+						<button class="card__cart-button">В корзину</button>
+					</div>
+				</article>
+			
+				
+				<article class="card">
+					<div class="card__image-box">
+						<img class="card__image" src="./images/products/product-3.jpg" alt=""/>
+					</div>
+					<div class="card__content">
+						<div class="card__title">
+							Drill Screwdriver Brandix ALX7054 200 Watts
+
+						</div>
+						<div class="card__price">
+							<span class="card__price-value">850.00₽
+							</span>
+						</div>
+						<button class="card__cart-button">В корзину</button>
+					</div>
+				</article>
+			
+				
+				<article class="card">
+					<div class="card__image-box">
+						<img class="card__image" src="./images/products/product-4.jpg" alt=""/>
+					</div>
+					<div class="card__content">
+						<div class="card__title">
+							Drill Series 3 Brandix KSR4590PQS 1500 Watts
+
+						</div>
+						<div class="card__price">
+							<span class="card__price-value">949.00₽
+							</span>
+						</div>
+						<button class="card__cart-button">В корзину</button>
+					</div>
+				</article>
+			
+				
+				<article class="card">
+					<div class="card__image-box">
+						<img class="card__image" src="./images/products/product-5.jpg" alt=""/>
+					</div>
+					<div class="card__content">
+						<div class="card__title">
+							Brandix Router Power Tool 2017ERXPK
+
+						</div>
+						<div class="card__price">
+							<span class="card__price-value">1,700.00₽
+							</span>
+						</div>
+						<button class="card__cart-button">В корзину</button>
+					</div>
+				</article>
+			
+				
+				<article class="card">
+					<div class="card__image-box">
+						<img class="card__image" src="./images/products/product-6.jpg" alt=""/>
+					</div>
+					<div class="card__content">
+						<div class="card__title">
+							Brandix Drilling Machine DM2019KW4 4kW
+
+						</div>
+						<div class="card__price">
+							<span class="card__price-value">3,199.00₽
+							</span>
+						</div>
+						<button class="card__cart-button">В корзину</button>
+					</div>
+				</article>
+			
+				
+				<article class="card">
+					<div class="card__image-box">
+						<img class="card__image" src="./images/products/product-7.jpg" alt=""/>
+					</div>
+					<div class="card__content">
+						<div class="card__title">
+							Brandix Pliers
+
+						</div>
+						<div class="card__price">
+							<span class="card__price-value">24.00₽
+							</span>
+						</div>
+						<button class="card__cart-button">В корзину</button>
+					</div>
+				</article>
+			
+				
+				<article class="card">
+					<div class="card__image-box">
+						<img class="card__image" src="./images/products/product-8.jpg" alt=""/>
+					</div>
+					<div class="card__content">
+						<div class="card__title">
+							Water Hose 40cm
+
+						</div>
+						<div class="card__price">
+							<span class="card__price-value">15.00₽
+							</span>
+						</div>
+						<button class="card__cart-button">В корзину</button>
+					</div>
+				</article>
+			
+				
+				<article class="card">
+					<div class="card__image-box">
+						<img class="card__image" src="./images/products/product-9.jpg" alt=""/>
+					</div>
+					<div class="card__content">
+						<div class="card__title">
+							Spanner Wrench
+
+						</div>
+						<div class="card__price">
+							<span class="card__price-value">19.00₽
+							</span>
+						</div>
+						<button class="card__cart-button">В корзину</button>
+					</div>
+				</article>
+			
+				
+				<article class="card">
+					<div class="card__image-box">
+						<img class="card__image" src="./images/products/product-10.jpg" alt=""/>
+					</div>
+					<div class="card__content">
+						<div class="card__title">
+							Water Tap
+
+						</div>
+						<div class="card__price">
+							<span class="card__price-value">15.00₽
+							</span>
+						</div>
+						<button class="card__cart-button">В корзину</button>
+					</div>
+				</article>
+			
+				
+				<article class="card">
+					<div class="card__image-box">
+						<img class="card__image" src="./images/products/product-11.jpg" alt=""/>
+					</div>
+					<div class="card__content">
+						<div class="card__title">
+							Hand Tool Kit
+
+						</div>
+						<div class="card__price">
+							<span class="card__price-value">149.00₽
+							</span>
+						</div>
+						<button class="card__cart-button">В корзину</button>
+					</div>
+				</article>
+			
+				
+				<article class="card">
+					<div class="card__image-box">
+						<img class="card__image" src="./images/products/product-12.jpg" alt=""/>
+					</div>
+					<div class="card__content">
+						<div class="card__title">
+							Ash's Chainsaw 3.5kW
+
+						</div>
+						<div class="card__price">
+							<span class="card__price-value">666.99₽
+							</span>
+						</div>
+						<button class="card__cart-button">В корзину</button>
+					</div>
+				</article>
+			
+				
+				<article class="card">
+					<div class="card__image-box">
+						<img class="card__image" src="./images/products/product-13.jpg" alt=""/>
+					</div>
+					<div class="card__content">
+						<div class="card__title">
+							Brandix Angle Grinder KZX3890PQW
+
+						</div>
+						<div class="card__price">
+							<span class="card__price-value">649.00₽
+							</span>
+						</div>
+						<button class="card__cart-button">В корзину</button>
+					</div>
+				</article>
+			
+				
+				<article class="card">
+					<div class="card__image-box">
+						<img class="card__image" src="./images/products/product-14.jpg" alt=""/>
+					</div>
+					<div class="card__content">
+						<div class="card__title">
+							Brandix Air Compressor DELTAKX500
+
+						</div>
+						<div class="card__price">
+							<span class="card__price-value">1,800.00₽
+							</span>
+						</div>
+						<button class="card__cart-button">В корзину</button>
+					</div>
+				</article>
+			
+				
+				<article class="card">
+					<div class="card__image-box">
+						<img class="card__image" src="./images/products/product-15.jpg" alt=""/>
+					</div>
+					<div class="card__content">
+						<div class="card__title">
+							Brandix Electric Jigsaw JIG7000BQ
+
+						</div>
+						<div class="card__price">
+							<span class="card__price-value">290.00₽
+							</span>
+						</div>
+						<button class="card__cart-button">В корзину</button>
+					</div>
+				</article>
+			
+				
+				<article class="card">
+					<div class="card__image-box">
+						<img class="card__image" src="./images/products/product-16.jpg" alt=""/>
+					</div>
+					<div class="card__content">
+						<div class="card__title">
+							Brandix Screwdriver SCREW1500ACC
+
+						</div>
+						<div class="card__price">
+							<span class="card__price-value">1,499.00₽
+							</span>
+						</div>
+						<button class="card__cart-button">В корзину</button>
+					</div>
+				</article>
+			
+			<!--=include futures-products_card.html -->
+		<!--=include futures-products_card.html -->
+			<!--=include futures-products_card.html -->
+			<!--=include futures-products_card.html -->
+			<!--=include futures-products_card.html -->
+			<!--=include futures-products_card.html -->
+			<!--=include futures-products_card.html -->
+			<!--=include futures-products_card.html -->
+			<!--=include futures-products_card.html -->
+			<!--=include futures-products_card.html -->
+		</div>
+	</div>
+</section>
+
+
+		<section class="brands section-block">
+
+	<header class="header-block container-xl">
+		<h2 class="header-block__title">Популярные бренды</h2>
+		<a href="#" class="header-block__link-button">
+			Все бренды
+			<span>></span>
+		</a>
+	</header>
+	<!-- //=  include _brands-grid.html -->
+	<div
+		class="container" style="position: relative;"><!--=include _brands-swiper.html -->
+	</div>
+
+
+</section>
+
+	<!--1=include about.html -->
+		<!--1=include catalog.html -->
+		<!--1=include refund.html -->
+	</main>
+
+
+
+		
+			<!--1=include footer.html -->
+			<footer class="footer">
+	<div class="footer__inner container-xl">
+		<div class="footer__logo">
+			<img src="./images/footer/brand-footer.webp" alt="">
+		</div>
+		<div class="footer__grid">
+			<adress class="footer__grid-menu">
+
+				<a class="footer__grid-info" href="mailto:info@stroykastore.ru">
+					<span class="icon">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path d="M4 20c-.55 0-1.02-.196-1.412-.587A1.927 1.927 0 0 1 2 18V6c0-.55.196-1.02.588-1.412A1.923 1.923 0 0 1 4 4h16c.55 0 1.021.196 1.413.588.391.391.587.862.587 1.412v12a1.93 1.93 0 0 1-.587 1.413A1.928 1.928 0 0 1 20 20H4Zm8-7.175a1.032 1.032 0 0 0 .525-.15L19.6 8.25a.828.828 0 0 0 .3-.312.866.866 0 0 0 .1-.413.815.815 0 0 0-.425-.75c-.283-.167-.575-.158-.875.025L12 11 5.3 6.8c-.3-.183-.592-.188-.875-.013-.283.175-.425.421-.425.738a.91.91 0 0 0 .1.437.668.668 0 0 0 .3.288l7.075 4.425c.083.05.171.087.263.112a.98.98 0 0 0 .262.038Z"></path>
+</svg>
+					</span>
+
+					<span class="footer__grid-info-text">info@stroykastore.ru</span>
+				</a>
+				<div class="footer__grid-info">
+					<span class="icon">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path d="M12 12.188a1.93 1.93 0 0 0 1.413-.588c.391-.392.587-.862.587-1.412 0-.55-.196-1.022-.587-1.414A1.928 1.928 0 0 0 12 8.188c-.55 0-1.02.195-1.412.586A1.927 1.927 0 0 0 10 10.188c0 .55.196 1.02.588 1.412.391.392.862.588 1.412.588Zm0 9.624a1.11 1.11 0 0 1-.4-.075 1.199 1.199 0 0 1-.35-.2C8.817 19.388 7 17.393 5.8 15.552 4.6 13.708 4 11.987 4 10.386c0-2.5.804-4.491 2.413-5.975C8.021 2.93 9.883 2.188 12 2.188c2.117 0 3.979.741 5.587 2.224C19.196 5.896 20 7.888 20 10.387c0 1.6-.6 3.322-1.8 5.163-1.2 1.842-3.017 3.837-5.45 5.988a1.2 1.2 0 0 1-.35.2c-.133.05-.267.075-.4.075Z"></path>
+</svg>
+					</span>
+
+					<span class="footer__grid-info-text">Москва, ул. Камушкина 10</span>
+				</div>
+			</adress>
+			<ul class="footer__grid-list">
+				<li class="footer__grid-item">
+					<a href="#" class="footer__grid-link">Личный кабинет</a>
+				</li>
+				<li class="footer__grid-item">
+					<a href="#" class="footer__grid-link">Заказы</a>
+				</li>
+				<li class="footer__grid-item">
+					<a href="#" class="footer__grid-link">Избранное</a>
+				</li>
+				<li class="footer__grid-item">
+					<a href="#" class="footer__grid-link">Корзина</a>
+				</li>
+			</ul>
+			<ul class="footer__grid-list">
+				<li class="footer__grid-item">
+					<a href="#" class="footer__grid-link">Каталог</a>
+				</li>
+				<li class="footer__grid-item">
+					<a href="#" class="footer__grid-link">Акции</a>
+				</li>
+				<li class="footer__grid-item">
+					<a href="#" class="footer__grid-link">Бренды</a>
+				</li>
+				<li class="footer__grid-item">
+					<a href="#" class="footer__grid-link">Контакты</a>
+				</li>
+			</ul>
+			<ul class="footer__grid-list">
+				<li class="footer__grid-item">
+					<a href="#" class="footer__grid-link">Стать продавцом</a>
+				</li>
+				<li class="footer__grid-item">
+					<a href="#" class="footer__grid-link">Доставка</a>
+				</li>
+				<li class="footer__grid-item">
+					<a href="#" class="footer__grid-link">Возврат</a>
+				</li>
+				<li class="footer__grid-item">
+					<a href="#" class="footer__grid-link">Документация</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__copyright">
+			<div class="footer__copyright__title">Давайте дружить</div>
+			<span class="footer__copyright-icon">© 2022. Все права защищены.
+			</span>
+			<span class="footer__copyright-icon">Политика конфиденциальности</span>
+		</div>
+	</div>
+</footer>
+
+		
+
+		<!--1=include modal-signin.html -->
+
+		
+			<script src="js/script.min.js"></script>
+		
+
+		
+			<!--=include minicart.html -->
+		
+	</body>
+
 </html>

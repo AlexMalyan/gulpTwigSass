@@ -1,0 +1,45 @@
+@use 'sass:list';
+@use 'variables' as *;
+@use 'mixins' as *;
+
+
+/* container */
+$selectors: xs 576,
+  sm 768,
+  md 992,
+  lg 1200,
+  xl 1440,
+  xxl 1600;
+
+@each $s in $selectors {
+
+  .container-#{list.nth($s,1)} {
+    width: min(#{list.nth($s,2)}px, 100% - var(--padding-side)*2);
+    margin-inline: auto;
+  }
+}
+
+.visiualy-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100% !important);
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+.hidden-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  @include mobile-above {
+    display: none !important;
+  }
+}

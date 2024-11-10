@@ -1,0 +1,78 @@
+<header class="header">
+	{# Top menu #}
+	<!--=include top.html -->
+		<div class="header__top "> <div class="container header__top-inner">
+			<div class="header__top-location">
+				<svg class="header__top-location-icon">
+					<use xlink:href="images/sprite.svg#location"></use>
+				</svg>
+				<span class="header__top-location-text">Москва</span>
+			</div>
+			<ul class="header__top-nav">
+				{% for item in menu_top %}
+					<li class="header__top-nav-item">
+						<a href="{{ item.link }}" class="header__top-nav-link">
+							{{ item.title }}
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+
+	{# Middle menu #}
+	<!--=include middle.html -->
+	<div class="container-xl">
+		<div class="header__middle ">
+			<a class="header__logo" href="/"></a>
+			<button type="button" class="btn header__menu-button">
+				<span class="header__menu-button-burger"></span>
+				<span class="header__menu-button-text">Каталог</span>
+			</button>
+			<div class="header__search">
+				<input class="header__search-input" type="text" placeholder="Поиск по каталогу">
+				<button class="btn header__search-button">
+					<span class="icon">
+						<svg>
+							<use xlink:href="svg/sprite.svg#search"></use>
+						</svg>
+					</span>
+
+				</button>
+			</div>
+
+			<div class="header__profile">
+				{% for item in menu.middle %}
+					<a href="{{ item.link}}.html" class="header__profile-item" id="{{ item.id }}">
+						<span class="header__profile-icon">
+							<span class="icon">
+								{% if  item.link == 'orders' %}
+									{% include "../svg/order.svg" %}
+								{% elseif item.link == 'cart'%}
+									{% include "../svg/cart.svg" %}
+								{% elseif item.link == 'profile'%}
+									{% include "../svg/account.svg" %}
+								{% endif %}
+
+							</span>
+						</span>
+						<span class="header__profile-text">{{ item.title}}</span>
+					</a>
+				{% endfor %}
+
+			</div>
+		</div>
+	</div>
+
+	{# Bottom menu #}
+	<!--=include bottom.html -->
+	<div class="header__bottom">
+		<div class="container-xl header__bottom-inner ">
+			<nav class="header__bottom-nav">
+				{% for item in menu.bottom %}
+					<a href="{{ item.link }}" class="header__bottom-nav-link">{{ item.title }}</a>
+				{% endfor %}
+			</nav>
+		</div>
+	</div>
+</header>
