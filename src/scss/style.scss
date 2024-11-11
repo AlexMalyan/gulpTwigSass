@@ -3,6 +3,10 @@
 
 @use 'fonts/fonts';
 
+// VENDORS
+@use '../../node_modules/swiper/swiper.min.css';
+
+// LAYOUT
 @use 'header';
 @use 'categories';
 @use 'brands';

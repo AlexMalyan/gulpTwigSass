@@ -6,7 +6,7 @@ const newer = require('gulp-newer');
 // const browserSync = require('browser-sync');
 
 module.exports = scripts = () => {
-  return src('src/js/**/*.js')
+  return src(['node_modules/swiper/swiper-bundle.min.js', 'src/js/**/*.js'])
     .pipe(concat("scripts.min.js"))
     .pipe(uglify())
     .pipe(dest('./dist/js'));
