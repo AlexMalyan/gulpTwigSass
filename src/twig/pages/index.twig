@@ -1,11 +1,16 @@
 {# index.twig #}
 {% extends "../layouts/base.twig" %}
 
+
+
 {% block page %}
 	<!-- 1=include banner.html -->
 	<main
 		class="main">
+
+
 		<!--1=include stocks.html -->
+		{% include "../stocks/stocks.twig" %}
 
 		{% include "../categories/popular-categories.twig" with {
 	categories: block_categories.categories
@@ -16,9 +21,19 @@
 		} %}
 
 		{% include "../brands/brands.twig" %}
+
+
 	<!--1=include about.html -->
+		{% include "../about/about.twig" %}
+
+
 		<!--1=include catalog.html -->
 		<!--1=include refund.html -->
+
+
+
 	</main>
+
+
 
 {% endblock %}

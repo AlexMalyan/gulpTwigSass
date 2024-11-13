@@ -1,0 +1,40 @@
+// BREADCRUMBS
+@use "variables" as *;
+
+.breadcrumbs {
+  // .breadcrumbs__list
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  // .breadcrumbs__item
+  &__item {
+    // margin-right: 10px;
+
+    &:after {
+      content: "\003E";
+      color: var(--text-color-grey);
+      // margin-left: 6px;
+    }
+
+    &:last-child {
+      &:after {
+        content: "";
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--text-color-grey);
+    transition: var(--transition-duration);
+
+    &:hover {
+      color: var(--text-primary-color);
+    }
+  }
+}

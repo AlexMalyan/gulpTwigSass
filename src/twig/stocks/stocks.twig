@@ -1,0 +1,21 @@
+<section class="stocks section-block">
+  <div class="container-xl">
+    <header class="header-block">
+      <h2 class="header-block__title">Акции</h2>
+      <a href="#" class="header-block__link-button">
+        Все акции
+        <span>></span>
+      </a>
+    </header>
+    <div class="stocks__grid">
+    {% for item in range(1, 4) %}
+      {% include "../stocks/_stock-card.twig" %}
+    {% endfor %}
+    
+      <!--=include _stock-card.html -->
+      <!--=include _stock-card.html -->
+      <!--=include _stock-card.html -->
+      <!--=include _stock-card.html -->
+
+    </div>
+</section>
