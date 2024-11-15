@@ -2,6 +2,15 @@
 @use "variables" as *;
 
 .breadcrumbs {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-duration);
+  padding: var(--space-small) 0;
+
+  &:hover {
+    color: var(--primary-color);
+  }
+
   // .breadcrumbs__list
   &__list {
     list-style: none;
@@ -16,9 +25,8 @@
     // margin-right: 10px;
 
     &:after {
-      content: "\003E";
-      color: var(--text-color-grey);
-      // margin-left: 6px;
+      content: "/";
+      padding: 0 3px;
     }
 
     &:last-child {
@@ -29,6 +37,7 @@
   }
 
   &__link {
+    font-size: small;
     text-decoration: none;
     color: var(--text-color-grey);
     transition: var(--transition-duration);

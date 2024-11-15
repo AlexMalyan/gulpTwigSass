@@ -2,9 +2,9 @@
 {% extends "../layouts/base.twig" %}
 
 
-
 {% block page %}
 	<!-- 1=include banner.html -->
+	{% include "../banner/banner.twig" %}
 	<main
 		class="main">
 
@@ -23,17 +23,15 @@
 		{% include "../brands/brands.twig" %}
 
 
-	<!--1=include about.html -->
+		<!--1=include about.html -->
 		{% include "../about/about.twig" %}
 
 
-		<!--1=include catalog.html -->
+	<!--1=include catalog.html -->
 		<!--1=include refund.html -->
 
 
-
 	</main>
-
 
 
 {% endblock %}

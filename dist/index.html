@@ -132,43 +132,92 @@
 		
 
 		
-		<div class="container-xl breadcrumbs section-block">
-<ul class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
-  
-   <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <a class="breadcrumbs__link" href="/" itemprop="item">
-        <span itemprop="name">Главная</span>
-      </a>
-      <meta itemprop="position" content=1>
-    </li>
-  
-   <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <a class="breadcrumbs__link" href="catalog.html" itemprop="item">
-        <span itemprop="name">Каталог</span>
-      </a>
-      <meta itemprop="position" content=2>
-    </li>
-  
-   <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <a class="breadcrumbs__link" href="materials.html" itemprop="item">
-        <span itemprop="name">Строительные материалы</span>
-      </a>
-      <meta itemprop="position" content=3>
-    </li>
-  
-   <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <a class="breadcrumbs__link" href="concrete.html" itemprop="item">
-        <span itemprop="name">Бетон</span>
-      </a>
-      <meta itemprop="position" content=4>
-    </li>
-  
-  </ul>
-</div>
+			<nav class="container-xl breadcrumbs">
+	<ul class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+		
+			<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a class="breadcrumbs__link" href="/" itemprop="item">
+					<span itemprop="name">Главная</span>
+				</a>
+				<meta itemprop="position" content=1>
+			</li>
+		
+			<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a class="breadcrumbs__link" href="catalog.html" itemprop="item">
+					<span itemprop="name">Каталог</span>
+				</a>
+				<meta itemprop="position" content=2>
+			</li>
+		
+			<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a class="breadcrumbs__link" href="materials.html" itemprop="item">
+					<span itemprop="name">Строительные материалы</span>
+				</a>
+				<meta itemprop="position" content=3>
+			</li>
+		
+			<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a class="breadcrumbs__link" href="concrete.html" itemprop="item">
+					<span itemprop="name">Бетон</span>
+				</a>
+				<meta itemprop="position" content=4>
+			</li>
+		
+	</ul>
+</nav>
+
 		
 
 		
 	<!-- 1=include banner.html -->
+	<div class="banner container-xl">
+	<div class="banner__inner">
+		<div class="swiper-wrapper">
+			
+				<div class="swiper-slide">
+					<picture>
+						<source srcset="./images/banner/banner1.webp" type="image/webp">
+						<source srcset="./images/banner/banner1.jpg" type="image/jpeg">
+						<img src="./images/banner/banner1.jpg" alt="">
+					</picture>
+				</div>
+			
+				<div class="swiper-slide">
+					<picture>
+						<source srcset="./images/banner/banner2.webp" type="image/webp">
+						<source srcset="./images/banner/banner2.jpg" type="image/jpeg">
+						<img src="./images/banner/banner2.jpg" alt="">
+					</picture>
+				</div>
+			
+				<div class="swiper-slide">
+					<picture>
+						<source srcset="./images/banner/banner3.webp" type="image/webp">
+						<source srcset="./images/banner/banner3.jpg" type="image/jpeg">
+						<img src="./images/banner/banner3.jpg" alt="">
+					</picture>
+				</div>
+			
+			<!-- Add more slides here -->
+		</div>
+		<!-- Add navigation buttons if needed -->
+		<button class="banner__button banner__button--prev">
+			<span class="icon" style="--icon-width: 60px">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path d="M17.45 21.113c.25-.25.376-.546.376-.889 0-.34-.125-.637-.375-.887l-7.325-7.325 7.35-7.35c.233-.233.35-.525.35-.875s-.125-.65-.375-.9a1.214 1.214 0 0 0-.889-.375c-.34 0-.637.125-.887.375l-8.4 8.425c-.1.1-.17.209-.213.325a1.114 1.114 0 0 0-.062.375c0 .134.021.259.062.375a.883.883 0 0 0 .213.325l8.425 8.425c.234.234.521.35.863.35.341 0 .638-.124.888-.374Z"></path>
+</svg>
+			</span>
+		</button>
+		<button class="banner__button banner__button--next">
+			<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path d="M7.375 2.887c-.25.25-.375.546-.375.888 0 .342.125.637.375.887l7.325 7.325-7.35 7.35c-.233.234-.35.525-.35.875s.125.65.375.9.546.375.888.375c.342 0 .637-.125.887-.375l8.4-8.425a.88.88 0 0 0 .213-.325c.042-.116.063-.241.063-.375 0-.133-.021-.258-.063-.375a.883.883 0 0 0-.213-.325L9.125 2.862a1.171 1.171 0 0 0-.862-.35c-.342 0-.638.125-.888.375Z"></path>
+</svg>
+			</span>
+		</button>
+
+	</div>
+</div>
+
 	<main
 		class="main">
 
@@ -620,7 +669,7 @@
 
 
 
-	<!--1=include about.html -->
+		<!--1=include about.html -->
 		<section class="section-block about ">
   <div class=" about__inner ">
     <div class="about__content">
@@ -642,13 +691,11 @@
 
 
 
-		<!--1=include catalog.html -->
+	<!--1=include catalog.html -->
 		<!--1=include refund.html -->
 
 
-
 	</main>
-
 
 
 
@@ -739,7 +786,7 @@
 		<!--1=include modal-signin.html -->
 
 		
-			<script src="js/scripts.min.js"></script>
+			<script src="js/scripts.min.js" type="module"></script>
 		
 
 		

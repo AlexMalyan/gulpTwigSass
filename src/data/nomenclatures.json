@@ -1,0 +1,27 @@
+[
+  {
+    "accountingSubType": null,
+    "article": null,
+    "attributes": null,
+    "balance": null,
+    "cost": null,
+    "description": null,
+    "description_simple": null,
+    "externalId": null,
+    "hierarchicalId": 6842,
+    "hierarchicalParent": null,
+    "id": null,
+    "images": [
+      "/img?params=eyJPYmplY3RUeXBlIjogIm5vbWVuY2xhdHVyZV9mb2xkZXIiLCAiT2JqZWN0SWQiOiA2ODQyLCAiUGhvdG9VUkwiOiAiaHR0cHM6Ly9kaXNrLnNiaXMucnUvZGlzay9hcGkvdjEvMjk5ZWI2YjktZWU5MC00YWEzLWJlZTctZTk3OTJiYjIwMzUwXzcxMGY1NTc0LTg0Y2EtNGU5Yi1iODYzLTI4NzFhODhlMGEwMSIsICJQaG90b0lkIjogbnVsbCwgIlNpemUiOiBudWxsLCAiQWRkaXRpb25hbFBhcmFtcyI6IG51bGx9"
+    ],
+    "indexNumber": 6600502,
+    "isKit": false,
+    "isParent": true,
+    "modifiers": [],
+    "name": "Смесители +",
+    "nomNumber": null,
+    "published": true,
+    "short_code": null,
+    "unit": null
+  }
+]

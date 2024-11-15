@@ -1,0 +1,190 @@
+const fs = require('fs');
+const fake = {
+  "nomenclatures": [
+    {
+      "accountingSubType": null,
+      "article": null,
+      "attributes": null,
+      "cost": null,
+      "description": null,
+      "description_simple": null,
+      "externalId": null,
+      "hierarchicalId": 6842,
+      "hierarchicalParent": null,
+      "id": null,
+      "images": [
+        "/img?params=eyJPYmplY3RUeXBlIjogIm5vbWVuY2xhdHVyZV9mb2xkZXIiLCAiT2JqZWN0SWQiOiA2ODQyLCAiUGhvdG9VUkwiOiAiaHR0cHM6Ly9kaXNrLnNiaXMucnUvZGlzay9hcGkvdjEvMjk5ZWI2YjktZWU5MC00YWEzLWJlZTctZTk3OTJiYjIwMzUwXzcxMGY1NTc0LTg0Y2EtNGU5Yi1iODYzLTI4NzFhODhlMGEwMSIsICJQaG90b0lkIjogbnVsbCwgIlNpemUiOiBudWxsLCAiQWRkaXRpb25hbFBhcmFtcyI6IG51bGx9"
+      ],
+      "indexNumber": 6600502,
+      "isKit": false,
+      "isParent": true,
+      "modifiers": [],
+      "name": "Смесители +",
+      "nomNumber": null,
+      "published": true,
+      "short_code": null,
+      "unit": null
+    },
+    {
+      "accountingSubType": null,
+      "article": null,
+      "attributes": null,
+      "cost": null,
+      "description": null,
+      "description_simple": null,
+      "externalId": null,
+      "hierarchicalId": 6843,
+      "hierarchicalParent": null,
+      "id": null,
+      "images": [
+        "/img?params=eyJPYmplY3RUeXBlIjogIm5vbWVuY2xhdHVyZV9mb2xkZXIiLCAiT2JqZWN0SWQiOiA2ODQzLCAiUGhvdG9VUkwiOiAiaHR0cHM6Ly9kaXNrLnNiaXMucnUvZGlzay9hcGkvdjEvZWI5NTU0MzktZjAwNi00MzYxLTljMDgtM2E0MjlkMjk5ZGVjXzllY2ZkNDI2LTQzNzUtNDVkZi04MDZiLWFlOTYzNDRjODAzMCIsICJQaG90b0lkIjogbnVsbCwgIlNpemUiOiBudWxsLCAiQWRkaXRpb25hbFBhcmFtcyI6IG51bGx9"
+      ],
+      "indexNumber": 6600752,
+      "isKit": false,
+      "isParent": true,
+      "modifiers": [],
+      "name": "Унитазы +",
+      "nomNumber": null,
+      "published": true,
+      "short_code": null,
+      "unit": null
+    },
+    {
+      "accountingSubType": null,
+      "article": null,
+      "attributes": null,
+      "cost": null,
+      "description": null,
+      "description_simple": null,
+      "externalId": null,
+      "hierarchicalId": 6848,
+      "hierarchicalParent": null,
+      "id": null,
+      "images": [
+        "/img?params=eyJPYmplY3RUeXBlIjogIm5vbWVuY2xhdHVyZV9mb2xkZXIiLCAiT2JqZWN0SWQiOiA2ODQ4LCAiUGhvdG9VUkwiOiAiaHR0cHM6Ly9kaXNrLnNiaXMucnUvZGlzay9hcGkvdjEvYTBkYThhZjktZTgyOS00MGQ3LThiMGEtNDlhMWJmNmEzNjExX2QzY2MwYTE3LTBjZjctNGM0ZS1hZTAzLTk5YWI3OWRhODhhZCIsICJQaG90b0lkIjogbnVsbCwgIlNpemUiOiBudWxsLCAiQWRkaXRpb25hbFBhcmFtcyI6IG51bGx9"
+      ],
+      "indexNumber": 6600877,
+      "isKit": false,
+      "isParent": true,
+      "modifiers": [],
+      "name": "Радиаторы +",
+      "nomNumber": null,
+      "published": true,
+      "short_code": null,
+      "unit": null
+    },
+    {
+      "accountingSubType": null,
+      "article": null,
+      "attributes": null,
+      "cost": null,
+      "description": null,
+      "description_simple": null,
+      "externalId": null,
+      "hierarchicalId": 7623,
+      "hierarchicalParent": null,
+      "id": null,
+      "images": [
+        "/img?params=eyJPYmplY3RUeXBlIjogIm5vbWVuY2xhdHVyZV9mb2xkZXIiLCAiT2JqZWN0SWQiOiA3NjIzLCAiUGhvdG9VUkwiOiAiaHR0cHM6Ly9kaXNrLnNiaXMucnUvZGlzay9hcGkvdjEvZmJmNjY3Y2UtOTcwZi00ODhjLTg2MTMtNmNmMzkzZDc2ZjU3X2I2ODk4NzRmLWNhMTAtNDJhZS1iYzkyLWVjNDhiNmRiODJkOSIsICJQaG90b0lkIjogbnVsbCwgIlNpemUiOiBudWxsLCAiQWRkaXRpb25hbFBhcmFtcyI6IG51bGx9"
+      ],
+      "indexNumber": 6600939,
+      "isKit": false,
+      "isParent": true,
+      "modifiers": [],
+      "name": "Водонагреватели +",
+      "nomNumber": null,
+      "published": true,
+      "short_code": null,
+      "unit": null
+    },
+    {
+      "accountingSubType": null,
+      "article": null,
+      "attributes": null,
+      "cost": null,
+      "description": null,
+      "description_simple": null,
+      "externalId": null,
+      "hierarchicalId": 7665,
+      "hierarchicalParent": null,
+      "id": null,
+      "images": [
+        "/img?params=eyJPYmplY3RUeXBlIjogIm5vbWVuY2xhdHVyZV9mb2xkZXIiLCAiT2JqZWN0SWQiOiA3NjY1LCAiUGhvdG9VUkwiOiAiaHR0cHM6Ly9kaXNrLnNiaXMucnUvZGlzay9hcGkvdjEvNGI3YmVmM2EtODVjYi00NjA4LThlNGUtOGJiZjcwODFlMGVkXzIxZmM1NmNmLWZmMTctNGFhNy04MzRkLWJmNGQ5ZmRkZmQyYiIsICJQaG90b0lkIjogbnVsbCwgIlNpemUiOiBudWxsLCAiQWRkaXRpb25hbFBhcmFtcyI6IG51bGx9"
+      ],
+      "indexNumber": 6600954,
+      "isKit": false,
+      "isParent": true,
+      "modifiers": [],
+      "name": "Ванны +",
+      "nomNumber": null,
+      "published": true,
+      "short_code": null,
+      "unit": null
+    }
+  ],
+  "outcome": {
+    "hasMore": true
+  }
+}
+
+async function getData(page) {
+  let url = 'https://api.sbis.ru/retail/nomenclature/list?';
+  const params = new URLSearchParams(
+    {
+      'pointId': 131,
+      'priceListId': 48,
+      'withBalance': true,
+      'page': 0,
+      'pageSize': 300
+    }
+  );
+
+  params.set('page', page);
+
+  url += params.toString();
+
+  // console.log(url);
+  const response = await fetch(url, {
+    method: 'GET',
+    headers: {
+      'X-SBISAccessToken': 'Nml0UjFEPy14c3NDTWdZSkRwRi9PL2ZWamEqVCZWKGtwSyg6YTkvZi9LTZwKUM8U14lX2Q8LDIvYl9PKCRWMDIwMjMtMDctMjAgMjA6MDI6MzYuMjE0MTk0',
+      'Content-Type': 'application/json'
+    }
+  });
+  const data = await response.json();
+
+  if (data.outcome.hasMore) {
+    let d = [];
+    d = d.concat(getData(page + 1));
+    console.log(d);
+    return getData(page + 1);
+  }
+
+
+
+}
+// return data;
+
+// fs.writeFileSync('./src/data/categories.json', JSON.stringify(data.categories));
+// fs.writeFileSync('./src/data/products.json', JSON.stringify(data.products));
+// fs.writeFileSync('./src/data/nomenclatures.json', JSON.stringify(data.nomenclatures));
+// const categorys = data.categories;
+// const products = data.products;
+// const nomenclatures = data.nomenclatures;
+
+// do { 
+//   console.log(nomenclatures);
+// } while (data.hasMore);
+
+function category(data) { }
+function product(data) { }
+
+function parser() {
+  let i = 0;
+  const data = getData(i);
+  do {
+    console.log(i++);
+  } while (data.hasMore);
+}
+
+module.exports = getData(0);
