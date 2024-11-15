@@ -8,7 +8,7 @@
 
 // LAYOUT
 @use "header";
-@use 'banner';
+@use "banner";
 @use "categories";
 @use "brands";
 @use "futures-products";
@@ -16,5 +16,6 @@
 @use "breadcrumbs";
 @use "catalog";
 @use "stocks";
+@use "product-single";
 
 @use "footer";

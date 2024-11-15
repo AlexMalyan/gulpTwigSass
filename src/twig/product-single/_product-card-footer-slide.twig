@@ -1,0 +1,24 @@
+
+
+<div class="product__footer-slider">
+
+<div class="product__footer-slider-img">
+  <img src="{{ i.images[0] }}.jpg" alt="">
+
+  <button class="icon product__footer-slider-button">
+  {% include "../svg/cart.svg" %}
+    <!--=include cart.svg -->
+  </button>
+
+
+
+</div>
+<div class="product__footer-slider-price">
+  <span class="product__footer-slider-price-value"> {{ i.price }}</span>
+  <span class="product__footer-slider-price-currency">руб.</span>/
+  <span class="product__footer-slider-price-measure">шт</span>
+</div>
+<div class="product__footer-slider-name">
+  {{ i.name }}
+</div>
+</div>

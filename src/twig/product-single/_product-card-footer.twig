@@ -1,0 +1,27 @@
+<div class="product__footer">
+  <div class="product__footer-block">
+    <div class="product__footer-title">Ещё может подойти</div>
+    <div class="product__footer-sliders">
+      <div class="product__footer-swiper swiper">
+        <div class="swiper-wrapper">
+
+          {% for item in products %}
+           {% if item.rating == 4 %}
+          <div class="swiper-slide">
+            
+             {% include "_product-card-footer-slide.twig" with { i: item } %}
+
+          </div>
+          {% endif %} 
+          {% endfor %}
+          <div class="swiper-pagination">
+          </div>
+        </div> 
+      </div>
+      <div class="product__footer-block">
+        <div class="product__footer-title">Рекомендуем</div>
+        <div class="product__footer-sliders">SWIPER 2</div>
+      </div>
+    </div>
+  </div>
+</div>

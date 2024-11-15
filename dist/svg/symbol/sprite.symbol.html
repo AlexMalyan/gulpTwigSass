@@ -105,6 +105,8 @@ They might well be outsourced to an external stylesheet of course.
 -->
 
 <style>
+ .svg-arrow-left-dims { width: 24px; height: 24px; }
+ .svg-arrow-right-dims { width: 24px; height: 24px; }
  .svg-cart-dims { width: 24px; height: 24px; }
  .svg-order-dims { width: 21px; height: 21px; }
  .svg-plumber-dims { width: 32px; height: 32px; }
@@ -130,6 +132,8 @@ for further details on how to create this embeddable sprite variant.
 -->
 
 <svg width="0" height="0" style="position:absolute">
+     <symbol viewBox="0 0 24 24" id="arrow-left" xmlns="http://www.w3.org/2000/svg"><path d="M17.45 21.113c.25-.25.376-.546.376-.889 0-.34-.125-.637-.375-.887l-7.325-7.325 7.35-7.35c.233-.233.35-.525.35-.875s-.125-.65-.375-.9a1.214 1.214 0 0 0-.889-.375c-.34 0-.637.125-.887.375l-8.4 8.425c-.1.1-.17.209-.213.325a1.114 1.114 0 0 0-.062.375c0 .134.021.259.062.375a.883.883 0 0 0 .213.325l8.425 8.425c.234.234.521.35.863.35.341 0 .638-.124.888-.374Z"/></symbol>
+     <symbol viewBox="0 0 24 24" id="arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M7.375 2.887c-.25.25-.375.546-.375.888 0 .342.125.637.375.887l7.325 7.325-7.35 7.35c-.233.234-.35.525-.35.875s.125.65.375.9.546.375.888.375c.342 0 .637-.125.887-.375l8.4-8.425a.88.88 0 0 0 .213-.325c.042-.116.063-.241.063-.375 0-.133-.021-.258-.063-.375a.883.883 0 0 0-.213-.325L9.125 2.862a1.171 1.171 0 0 0-.862-.35c-.342 0-.638.125-.888.375Z"/></symbol>
      <symbol viewBox="0 0 24 24" id="cart" xmlns="http://www.w3.org/2000/svg"><path d="M7 22c-.55 0-1.02-.2-1.41-.59-.4-.39-.59-.86-.59-1.41 0-.55.2-1.02.59-1.41.39-.4.86-.59 1.41-.59.55 0 1.02.2 1.41.59.4.39.59.86.59 1.41 0 .55-.2 1.02-.59 1.41-.39.4-.86.59-1.41.59Zm10 0c-.55 0-1.02-.2-1.41-.59-.4-.39-.59-.86-.59-1.41 0-.55.2-1.02.59-1.41.39-.4.86-.59 1.41-.59.55 0 1.02.2 1.41.59.4.39.59.86.59 1.41 0 .55-.2 1.02-.59 1.41-.39.4-.86.59-1.41.59ZM6.15 6l2.4 5h7l2.75-5H6.15ZM5.2 4h14.75c.38 0 .68.17.88.51.2.34.2.69.02 1.04l-3.55 6.4A2 2 0 0 1 15.55 13H8.1L7 15h11c.28 0 .52.1.71.29.2.19.29.43.29.71 0 .28-.1.52-.29.71-.19.2-.43.29-.71.29H7c-.75 0-1.32-.33-1.7-.99a1.89 1.89 0 0 1-.05-1.96L6.6 11.6 3 4H2a.97.97 0 0 1-.71-.29A.97.97 0 0 1 1 3c0-.28.1-.52.29-.71.19-.2.43-.29.71-.29h1.63a1 1 0 0 1 .9.58L5.2 4Z"/></symbol>
      <symbol viewBox="0 0 21 21" id="order" xmlns="http://www.w3.org/2000/svg"><path d="M5 21a1.93 1.93 0 0 1-1.41-.59A1.93 1.93 0 0 1 3 19V6.5c0-.25.04-.47.13-.68.08-.2.19-.39.32-.57l1.4-1.7c.13-.18.3-.32.5-.41.2-.1.42-.14.65-.14h12c.23 0 .45.05.65.14.2.09.37.23.5.41l1.4 1.7c.13.18.24.38.32.57.09.2.13.43.13.68V19a1.93 1.93 0 0 1-.59 1.41A1.93 1.93 0 0 1 19 21H5Zm.4-15h13.2l-.85-1H6.25L5.4 6ZM5 19h14V8H5v11Z"/></symbol>
      <symbol viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" id="plumber" xmlns="http://www.w3.org/2000/svg"><path style="fill:#35d8b9" d="M353.661 230.426 256 89.713l-97.661 140.713c-32.788 47.241-27.06 111.178 13.602 151.84 46.424 46.425 121.693 46.425 168.118 0 40.662-40.662 46.389-104.598 13.602-151.84z"/><path style="fill:#2bbfa3" d="M226.081 382.266c-14.473-40.662-16.511-104.599-4.841-151.84L256 89.713l-97.661 140.713c-32.788 47.241-27.06 111.178 13.602 151.84 23.213 23.213 53.635 34.819 84.059 34.819-10.828 0-21.657-11.606-29.919-34.819z"/><path style="fill:#333" d="M256 426.421c-32.848 0-65.696-12.503-90.703-37.51-43.916-43.915-50.087-112.821-14.677-163.842l97.661-140.713a9.396 9.396 0 0 1 15.44 0l97.661 140.713c35.41 51.022 29.237 119.927-14.677 163.842-25.009 25.007-57.857 37.51-90.705 37.51zm0-320.228-89.941 129.591c-30.223 43.546-24.955 102.357 12.527 139.838 42.687 42.687 112.143 42.685 154.83 0 37.481-37.481 42.751-96.292 12.527-139.838L256 106.193z"/><path style="fill:#fff" d="M317.912 369.515a9.365 9.365 0 0 1-6.644-2.752 9.395 9.395 0 0 1 0-13.288c26.758-26.758 30.519-68.745 8.943-99.832l-18.937-27.284c-2.958-4.263-1.902-10.118 2.362-13.077a9.396 9.396 0 0 1 13.077 2.362l18.937 27.284c26.764 38.564 22.099 90.644-11.094 123.836a9.37 9.37 0 0 1-6.644 2.751z"/><path style="fill:#f4550f" d="M256 512C114.841 512 0 397.159 0 256S114.841 0 256 0s256 114.841 256 256-114.841 256-256 256zm0-493.207C125.204 18.793 18.793 125.204 18.793 256S125.204 493.207 256 493.207 493.207 386.796 493.207 256 386.796 18.793 256 18.793z"/><circle style="fill:#fff" cx="289.569" cy="193.012" r="9.396"/></symbol>
@@ -160,6 +164,22 @@ embedded above. They may be styled via CSS.
             <h3>A) Inline SVG with embedded sprite</h3>
             <ul>
 
+             <li title="arrow-left">
+                    <div class="icon-box">
+                        <svg class="svg-arrow-left-dims">
+                            <use xlink:href="#arrow-left"></use>
+                        </svg>
+                    </div>
+                    <h2>arrow-left, </h2>
+                </li>
+             <li title="arrow-right">
+                    <div class="icon-box">
+                        <svg class="svg-arrow-right-dims">
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                    <h2>arrow-right, </h2>
+                </li>
              <li title="cart">
                     <div class="icon-box">
                         <svg class="svg-cart-dims">
@@ -211,6 +231,22 @@ SVG sprite. They may be styled via CSS.
             <h3>B) Inline SVG with external sprite</h3>
             <ul>
 
+             <li title="arrow-left">
+                    <div class="icon-box">
+                        <svg class="svg-arrow-left-dims">
+                            <use xlink:href="../sprite.svg#arrow-left"></use>
+                        </svg>
+                    </div>
+                    <h2>arrow-left</h2>
+                </li>
+             <li title="arrow-right">
+                    <div class="icon-box">
+                        <svg class="svg-arrow-right-dims">
+                            <use xlink:href="../sprite.svg#arrow-right"></use>
+                        </svg>
+                    </div>
+                    <h2>arrow-right</h2>
+                </li>
              <li title="cart">
                     <div class="icon-box">
                         <svg class="svg-cart-dims">
@@ -251,7 +287,7 @@ SVG sprite. They may be styled via CSS.
 
         </section>
         <footer>
-            <p>Generated at Fri, 15 Nov 2024 15:37:36 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+            <p>Generated at Fri, 15 Nov 2024 17:01:01 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
         </footer>
     </body>
 </html>

@@ -1,0 +1,130 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.product {
+  // .product__footer
+
+  &__footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--space-medium);
+
+    padding: var(--space-medium);
+
+    &-block:not(:first-child) {
+      border-top: 3px solid var(--primary-color-orange);
+      margin-top: 30px;
+    }
+  }
+
+  // .product__footer-block
+
+  &__footer-block {
+  }
+
+  // .product__footer-title
+
+  &__footer-title {
+    @include font-family($font-family: "Manrope Bold", $font-weight: 700);
+
+    @include fluid-text(28, 16);
+  }
+
+  // .product__footer-sliders
+
+  &__footer-sliders {
+  }
+
+  // .product__footer-swiper
+
+  &__footer-swiper {
+    margin: 30px 0;
+  }
+
+  // .product__footer-slider
+
+  &__footer-slider {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 5px 0;
+    border-radius: var(--border-radius);
+    padding: 8px;
+  }
+
+  // .product__footer-slider-img
+
+  &__footer-slider-img {
+    position: relative;
+    @include fluid-img;
+    background-color: var(--primary-color-orange);
+  }
+
+  // .product__footer-slider-price
+
+  &__footer-slider-price {
+    @include font-family($font-family: "Manrope Bold", $font-weight: 700);
+
+    @include fluid-text(20, 16);
+    color: var(--primary-color-orange);
+    padding: var(--space-small) 0;
+  }
+
+  // .product__footer-slider-price-addtocart
+
+  &__footer-slider-addtocart {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+
+    // @include square(40px);
+  }
+
+  // .product__footer-slider-price-button
+
+  &__footer-slider-button {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    @include square(40px);
+
+    background-color: var(--primary-color-yellow);
+    border: 1px solid var(--primary-color-yellow);
+    border-radius: 50%;
+
+    & .icon-svg {
+      padding: 2px;
+    }
+
+    &:hover {
+      background-color: var(--primary-color-orange);
+
+      & .icon-svg:hover {
+        fill: var(---primary-color-grey);
+      }
+    }
+  }
+
+  // .product__footer-slider-price-value
+
+  &__footer-slider-price-value {
+  }
+
+  // .product__footer-slider-price-currency
+
+  &__footer-slider-price-currency {
+  }
+
+  // .product__footer-slider-price-measure
+
+  &__footer-slider-price-measure {
+  }
+
+  // .product__footer-slider-name
+
+  &__footer-slider-name {
+    @include font-family($font-family: "Manrope Regular", $font-weight: 400);
+    @include fluid-text(16, 14);
+    color: var(--primary-color-darkest);
+  }
+}
