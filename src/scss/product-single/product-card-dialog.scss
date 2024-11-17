@@ -13,6 +13,7 @@
   min-width: 378px;
 
   border: none;
+  border-radius: var(--border-radius);
 
   &[open] {
     opacity: 1;

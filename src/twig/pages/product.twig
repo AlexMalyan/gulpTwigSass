@@ -23,6 +23,7 @@
 						</div>
 
 						<ul class="product__share-list">
+						
 							<li class="product__share-item">
 								<a href="whatsapp://send?text=" class="product__share-link">
 									<span class="icon  product__share-icon--whatsapp">
@@ -161,27 +162,38 @@
 							</p>
 							<div class="product__main-share-block">
 								<ul class="product__main-share-list">
+								{% set share = ['wtapp', 'tg', 'vk'] %}
+								{% for s in share %}
 									<li class="product__main-share-item">
-										<a href="" class="product__main-share-link">
-											<span
-												class="icon"><!--=include wtapp.svg -->
-											</span>
+										<a href="" class="product__main-share-link ">
+												{% if s == 'wtapp' %}
+												<span
+												class="icon product__share-icon--whatsapp">
+												{% include "../svg/wtapp.svg" %}
+													</span>
+
+												{% elseif s == 'tg' %}
+												<span
+												class="icon product__share-icon--tg">
+												{% include "../svg/tg.svg" %}
+													</span>
+												
+												{% else %}
+												<span
+												class="icon product__share-icon--vk">
+												
+												{% include "../svg/vk.svg" %}
+</span>
+
+												{% endif %}
+												<!--=include wtapp.svg -->
+											
 										</a>
 									</li>
-									<li class="product__main-share-item">
-										<a href="" class="product__main-share-link">
-											<span
-												class="icon"><!--=include tg.svg -->
-											</span>
-										</a>
-									</li>
-									<li class="product__main-share-item">
-										<a href="" class="product__main-share-link">
-											<span
-												class="icon"><!--=include vk.svg -->
-											</span>
-										</a>
-									</li>
+								
+									
+								{% endfor %}
+									
 								</ul>
 							</div>
 						</div>
@@ -199,5 +211,6 @@
 		</div>
 		<!-- end wrapper card content -->
 		<!--=include _product-card-dialog.html -->
+		{% include "../product-single/_product-card-dialog.twig"%}
 	</div>
 {% endblock %}

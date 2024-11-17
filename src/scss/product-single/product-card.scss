@@ -133,7 +133,8 @@
     border-bottom: 1px solid var(--border-color-grey);
     padding: var(--space-large) 0 var(--space-medium) 0;
 
-    &-rating {}
+    &-rating {
+    }
 
     &-article {
       font-size: 13px;
@@ -261,7 +262,8 @@
 
   // .product__main-buttons
 
-  &__main-buttons {}
+  &__main-buttons {
+  }
 
   &__main-counter {
     display: flex;
@@ -336,9 +338,11 @@
 
     @include fluid-text(20, 16);
 
-    @include button($background-color: $background-color-btn,
+    @include button(
+      $background-color: $background-color-btn,
       $text-color: var(--text-color-white),
-      $border-radius: var(--border-radius));
+      $border-radius: var(--border-radius)
+    );
   }
 
   // .product__main-oneclick
@@ -348,9 +352,11 @@
 
     @include fluid-text(20, 16);
 
-    @include button-plain($border: 2px solid $background-color-btn,
+    @include button-plain(
+      $border: 2px solid $background-color-btn,
       $background-color-hover: $background-color-btn,
-      $color: var(---text-primary-color));
+      $color: var(---text-primary-color)
+    );
 
     &:hover {
       color: var(--text-color-white);
@@ -442,11 +448,11 @@
     --color: var(--bg-color-accent);
     position: relative;
     display: none;
-    width: 130px;
+    width: max-content;
     position: absolute;
     top: 120%;
     left: 0;
-    padding: var(--space-large);
+    padding: var(--space-medium);
     border-radius: var(--border-radius);
     // background-color: var(--bg-color-white);
     background-color: var(--color);
@@ -463,7 +469,7 @@
       border-color: transparent transparent var(--color) transparent;
     }
 
-    &.is-active {
+    &--open {
       display: block;
       transition: all 0.3s ease;
     }
@@ -472,15 +478,19 @@
   &__main-share-list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: var(--space-medium);
   }
 
   // .product__main-share-item
 
-  &__main-share-item {}
+  &__main-share-item {
+  }
 
   // .product__main-share-link
 
-  &__main-share-link {}
+  &__main-share-link {
+  }
 }
 
 // @import 'product-card-dialog';
