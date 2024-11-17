@@ -91,7 +91,37 @@
       },
       {
         "title": "Подводка для воды и газа",
-        "link": "catalog"
+        "link": "catalog",
+        "submenu": [
+          {
+            "title": "Engravers",
+            "url": ""
+          },
+          {
+            "title": "Drills",
+            "url": ""
+          },
+          {
+            "title": "Wrenches",
+            "url": ""
+          },
+          {
+            "title": "Plumbing",
+            "url": ""
+          },
+          {
+            "title": "Wall Chaser",
+            "url": ""
+          },
+          {
+            "title": "Pneumatic Tools",
+            "url": ""
+          },
+          {
+            "title": "Milling Cutters",
+            "url": ""
+          }
+        ]
       },
       {
         "title": "Полотенцесушители",

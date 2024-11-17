@@ -5,7 +5,7 @@
 	<div
 		class="product">
 		<!-- description -->
-		{% include "../product-single/_product-card-description.twig" %}
+		{% include "../product-single/_product-card-description.twig" with product %}
 		<!-- end description -->
 		<div
 			class="container-xl product__container-grid">
@@ -62,11 +62,15 @@
 			</div>
 			<!-- end sidebar -->
 			<!-- wrapper card content -->
-			<div class="product__main">
+			<div
+				class="product__main">
+				<!-- _product-card-slider.html -->
 				<div class="product__main-slider">
-					{% include "../product-single/_product-card-slider.twig" %}
-					<!--=include _product-card-slider.html -->
+					{% set product_img =products[15].images %}
+
+					{% include "../product-single/_product-card-slider.twig"  with	product.images 	%}
 				</div>
+				<!-- /_product-card-slider.html -->
 				<div class="product__main-info">
 					<div
 						class="product__rows">
@@ -82,14 +86,15 @@
 						</div>
 					</div>
 					<div class="product__main-title">
-						Кран шаровый PPR 25 ST DIAL (70/5)
+						{{ product.name }}
 					</div>
 					<button class="product__main-more">Все характеристики</button>
 
 					<div class="product__main-prices">
 						<span class="product__main-price-value">
-							106.79</span>
-						<span class="product__main-price-currency">руб.</span>
+							{{ product.price }}
+						</span>
+						{# <span class="product__main-price-currency">руб.</span> #}
 						/
 						<span class="product__main-price-measure">шт</span>
 					</div>
@@ -152,8 +157,7 @@
 								</span>
 							</button>
 							<p class="product__main-share-text">
-								Цена действительна только для интернет-магазина и может отличаться
-																																																																																																              от цен в розничных магазинах
+								Цена действительна только для интернет-магазина и может отличаться от цен в розничных магазинах
 							</p>
 							<div class="product__main-share-block">
 								<ul class="product__main-share-list">
@@ -193,10 +197,7 @@
 
 			<!-- end  footer product card-->
 		</div>
-
 		<!-- end wrapper card content -->
-
 		<!--=include _product-card-dialog.html -->
 	</div>
-
 {% endblock %}

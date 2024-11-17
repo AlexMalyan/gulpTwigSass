@@ -1,19 +1,25 @@
+{# 
+product_img - массив с картинками 15 продукта
+ #}
+
 <div class="product__swiper swiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img src="./images/products/product_single.jpg" alt="" class="product__swiper-img">
-    </div>
-    <div class="swiper-slide">
-      <img src="./images/products/product_single-one.jpg" alt="" class="product__swiper-img">
-    </div>
-    <div class="swiper-slide"><img src="./images/products/product_single.jpg" alt="" class="product__swiper-img"></div>
-    <div class="swiper-slide"><img src="./images/products/product_single-one.jpg" alt="" class="product__swiper-img">
-    </div>
-    <div class="swiper-slide"><img src="./images/products/product_single.jpg" alt="" class="product__swiper-img"></div>
-    <div class="swiper-slide">
-      <img src="./images/products/product_single-one.jpg" alt="" class="product__swiper-img">
-    </div>
-  </div>
-  <!-- <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div> -->
+	<div class="swiper-wrapper">
+		{% for img in product_img %}
+			<div class="swiper-slide">
+				<img class="product__swiper-img" src="./{{ img ~ '.jpg' }}" alt="">
+			</div>
+		{% endfor %}
+	</div>
+	<!--/ swiper-wrapper -->
+	<!-- <div class="swiper-button-next"></div>
+								  <div class="swiper-button-prev"></div> -->
+</div>
+<div class="product__thumbs swiper">
+	<div class="swiper-wrapper">
+		{% for img in product_img %}
+			<div class="swiper-slide">
+				<img class="product__swiper-img" src="./{{ img ~ '.jpg' }}" alt="">
+			</div>
+		{% endfor %}
+	</div>
 </div>

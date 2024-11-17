@@ -28,7 +28,9 @@
     justify-content: space-between;
     align-items: center;
 
-    &-head {}
+    &-head {
+      @include fluid-text(30, 18);
+    }
   }
 
   &__share-box {
@@ -106,13 +108,16 @@
     grid-template-columns: 1fr 1fr;
     // grid-template-rows: 1fr 1fr;
     gap: 20px;
+    padding-top: var(--space-large);
   }
 
   // .product__main-block
 
   // .product__main-slider
 
-  &__main-slider {}
+  &__main-slider {
+    max-width: 400px;
+  }
 
   // .product__col
 

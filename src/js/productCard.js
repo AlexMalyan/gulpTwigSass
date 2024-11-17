@@ -1,3 +1,11 @@
+const items = document.querySelectorAll('.product__menu-item');
+const item = document.querySelector('.product__menu-item');
+const icon = item.querySelector('.icon');
+
+if (item.classList.contains('product__menu-item--has-sub')) {
+  icon.classList.add('product__menu-icon--active');
+}
+
 // =include productCardMenu.js
 const element = document.querySelector('.product__main-share-button');
 const block = document.querySelector('.product__main-share-block');
@@ -28,10 +36,6 @@ closeBtn.addEventListener("click", () => {
   dialogElement.close();
 });
 
-
-
-
-
 element.addEventListener('click', () => {
   if (block.classList.contains('is-active')) {
     block.classList.remove('is-active');
@@ -44,26 +48,4 @@ element.addEventListener('click', () => {
   // element.classList.toggle('is-active');
 });
 
-const swiper2 = new Swiper(".product__swiper", {
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  // thumbs: {
-  //   swiper: swiper,
-  // },
-});
-
-const swiper3 = new Swiper(".product__footer-swiper", {
-  slidesPerView: 6,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  // thumbs: {
-  //   swiper: swiper,
-  // },
-});
 
