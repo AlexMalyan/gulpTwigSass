@@ -44,13 +44,11 @@
 
   // .product__description-text
 
-  &__description-text {
-  }
+  &__description-text {}
 
   // .product__description-specifications
 
-  &__description-specifications {
-  }
+  &__description-specifications {}
 
   // .product__description-specifications-title
 
@@ -75,6 +73,7 @@
   // .product__description-specifications-body
 
   &__description-specifications-body {
+
     & tr,
     td {
       // background-color: var(--secondary-color-grey);
@@ -115,12 +114,10 @@
 
     &-value,
     &-unit {
-      @include font-family($font-family: "Manrope Bold", $font-weight: 700);
-      font-size: clamp(
-        var(--font-size-small),
-        5vw,
-        var(--font-size-medium) * 2
-      );
+      @include font-family($font-family: "Inter Bold", $font-weight: 700);
+      font-size: clamp(var(--font-size-small),
+          5vw,
+          var(--font-size-medium) * 2);
       line-height: 130%;
       color: var(--text-color-accent);
     }
@@ -129,11 +126,9 @@
   // .product__description-addtocart
 
   &__description-addtocart {
-    @include button(
-      $background-color-btn,
+    @include button($background-color-btn,
       var(--text-color-white),
-      var(--border-radius)
-    );
+      var(--border-radius));
   }
 
   &__description-discount {
@@ -146,7 +141,7 @@
     border-radius: 4px;
 
     &-value {
-      @include font-family($font-family: "Manrope Bold", $font-weight: 700);
+      @include font-family($font-family: "Inter Bold", $font-weight: 700);
       font-size: clamp(var(--font-size-small), 5vw, var(--font-size-medium));
       line-height: 130%;
     }

@@ -28,11 +28,11 @@
     justify-content: space-between;
     align-items: center;
 
-    &-head {
-    }
+    &-head {}
   }
 
   &__share-box {
+    position: relative;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -68,13 +68,16 @@
   }
 
   &__share-list {
+    position: absolute;
+    right: 62px;
     display: none;
     // display: flex;
     transition: all 0.3s ease;
   }
 
   &__share-item {
-    padding: var(--space-medium);
+    background-color: var(--bg-color-white);
+    padding: var(--space-small);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     cursor: pointer;
@@ -109,8 +112,7 @@
 
   // .product__main-slider
 
-  &__main-slider {
-  }
+  &__main-slider {}
 
   // .product__col
 
@@ -126,8 +128,7 @@
     border-bottom: 1px solid var(--border-color-grey);
     padding: var(--space-large) 0 var(--space-medium) 0;
 
-    &-rating {
-    }
+    &-rating {}
 
     &-article {
       font-size: 13px;
@@ -255,8 +256,7 @@
 
   // .product__main-buttons
 
-  &__main-buttons {
-  }
+  &__main-buttons {}
 
   &__main-counter {
     display: flex;
@@ -327,29 +327,25 @@
   // .product__main-addtocart
 
   &__main-addtocart {
-    @include font-family($font-family: "Manrope Bold", $font-weight: 700);
+    @include font-family($font-family: "Inter Bold", $font-weight: 700);
 
     @include fluid-text(20, 16);
 
-    @include button(
-      $background-color: $background-color-btn,
+    @include button($background-color: $background-color-btn,
       $text-color: var(--text-color-white),
-      $border-radius: var(--border-radius)
-    );
+      $border-radius: var(--border-radius));
   }
 
   // .product__main-oneclick
 
   &__main-oneclick {
-    @include font-family($font-family: "Manrope Bold", $font-weight: 700);
+    @include font-family($font-family: "Inter Bold", $font-weight: 700);
 
     @include fluid-text(20, 16);
 
-    @include button-plain(
-      $border: 2px solid $background-color-btn,
+    @include button-plain($border: 2px solid $background-color-btn,
       $background-color-hover: $background-color-btn,
-      $color: var(---text-primary-color)
-    );
+      $color: var(---text-primary-color));
 
     &:hover {
       color: var(--text-color-white);
@@ -475,13 +471,11 @@
 
   // .product__main-share-item
 
-  &__main-share-item {
-  }
+  &__main-share-item {}
 
   // .product__main-share-link
 
-  &__main-share-link {
-  }
+  &__main-share-link {}
 }
 
 // @import 'product-card-dialog';

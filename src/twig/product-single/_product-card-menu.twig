@@ -1,0 +1,20 @@
+<div class="product__menu-block">
+	<ul class="product__menu-list">
+
+		{% for item in menu.sidebar %}
+			<li class="product__menu-item product__menu-item--has-sub">
+				<a href="{{ item.link ~ '.html' }}" class="product__menu-link">
+					{{ item.title }}
+					<span
+						class="icon product__menu-icon " data-icon="false"><!--=include arrow-right.svg -->
+					</span>
+				</a>
+
+				<!--=include _product-card-sidebar-submenu.html -->
+
+			</li>
+		{% endfor %}
+
+
+	</ul>
+</div>

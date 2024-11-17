@@ -2,23 +2,23 @@
     "top": [
       {
         "title": "Бренды",
-        "link": "brands.html"
+        "link": "brandg"
       },
       {
         "title": "Доставка",
-        "link": "delivery.html"
+        "link": "deliverg"
       },
       {
         "title": "Возврат",
-        "link": "return.html"
+        "link": "returg"
       },
       {
         "title": "Документация",
-        "link": "docs.html"
+        "link": "docg"
       },
       {
         "title": "Контакты",
-        "link": "contacts.html"
+        "link": "contactg"
       }
     ],
     "middle": [
@@ -41,39 +41,81 @@
     "bottom": [
       {
         "title": "Акции",
-        "link": "actions.html"
+        "link": "actiong"
       },
       {
         "title": "Строительные материалы",
-        "link": "materials.html"
+        "link": "materialg"
       },
       {
         "title": "Керамическая плитка",
-        "link": "catalog.html"
+        "link": "catalog"
       },
       {
         "title": "Краски",
-        "link": "catalog.html"
+        "link": "catalog"
       },
       {
         "title": "Сантехника",
-        "link": "catalog.html"
+        "link": "catalog"
       },
       {
         "title": "Напольные покрытия",
-        "link": "catalog.html"
+        "link": "catalog"
       },
       {
         "title": "Инструменты",
-        "link": "catalog.html"
+        "link": "catalog"
       },
       {
         "title": "Обои",
-        "link": "catalog.html"
+        "link": "catalog"
       },
       {
         "title": "Окна",
-        "link": "catalog.html"
+        "link": "catalog"
+      }
+    ],
+    "sidebar": [
+      {
+        "title": "Водонагреватели",
+        "link": "catalog"
+      },
+      {
+        "title": "Канализация",
+        "link": "catalog"
+      },
+      {
+        "title": "Коллекторы",
+        "link": "catalog"
+      },
+      {
+        "title": "Подводка для воды и газа",
+        "link": "catalog"
+      },
+      {
+        "title": "Полотенцесушители",
+        "link": "catalog"
+      },
+      {
+        "title": "Счетчики воды и газа",
+        "link": "catalog"
+      },
+      {
+        "title": "Трубы и фитинги",
+        "link": "catalog"
+      },
+      {
+        "title": "Резьбовые соединения",
+        "link": "catalog"
+      },
+      {
+        "title": "Теплоносители",
+        "link": "catalog"
+      },
+      {
+        "title": "Фильтры и водоподготовка",
+        "link": "catalog"
       }
     ]
   }
