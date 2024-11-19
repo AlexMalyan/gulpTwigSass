@@ -1,0 +1,54 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.menu-main {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  opacity: 0;
+
+  // .menu-main__inner
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    background-color: var(--bg-color-white);
+    height: 100vh;
+    padding: var(--space-medium);
+  }
+
+  // .menu-main__list
+
+  &__list {
+  }
+
+  // .menu-main__item
+
+  &__item {
+    @include fluid-text(24, 16);
+    color: var(--primary-color-pink);
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  &__submenu {
+    margin-top: var(--space-medium);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: var(--space-medium);
+  }
+
+  &__submenu-link {
+    color: inherit;
+    @include fluid-text(18, 12);
+    color: var(--primary-color);
+    &:hover {
+      color: var(--primary-color-pink);
+    }
+  }
+}

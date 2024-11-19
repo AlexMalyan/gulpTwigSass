@@ -1,0 +1,26 @@
+<nav class="menu-main">
+    <div class="menu-main__inner">
+    {% for item in block_categories.categories %}
+        <div class="menu-main__list">
+                <a href="{{ item.url }}" class="menu-main__item">{{ item.title }}
+                </a>
+            <div class="menu-main__submenu">
+                
+                {% for i in item.subcategories %}   
+                    <a href="{{ i.url }}" class="menu-main__submenu-link">
+                        {{ i.title }}
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+         {% endfor %}    
+    </div>
+</nav>
+
+
+{# 
+            <li class="menu-main__item">
+            <a href="" class="menu-main__link">
+            
+            </a>
+            </li> #}
