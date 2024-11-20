@@ -38,67 +38,16 @@
 		<div class="header__middle ">
 
 			<a class="header__logo" href="/"></a>
+			<div class="header__button-overlay">
+
 			<button type="button" class="btn header__menu-button">
-				<span class="header__menu-button-burger"></span>
+				<div class="header__menu-burger">
+				<span class="header__menu-burger-line"></span>
+				<span class="header__menu-burger-line"></span>
+				<span class="header__menu-burger-line"></span>
+				</div>
 				<span class="header__menu-button-text">Каталог</span>
-
 			</button>
-
-			<div class="header__search">
-				<input class="header__search-input" type="text" placeholder="Поиск по каталогу">
-				<button class="btn header__search-button">
-					<span class="icon">
-						<svg>
-							<use xlink:href="svg/sprite.svg#search"></use>
-						</svg>
-					</span>
-
-				</button>
-			</div>
-
-			<div class="header__profile">
-				
-					<a href="orders.html" class="header__profile-item" id="orders">
-						<span class="header__profile-icon">
-							<span class="icon">
-								
-									<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-	<path d="M5 21a1.93 1.93 0 0 1-1.41-.59A1.93 1.93 0 0 1 3 19V6.5c0-.25.04-.47.13-.68.08-.2.19-.39.32-.57l1.4-1.7c.13-.18.3-.32.5-.41.2-.1.42-.14.65-.14h12c.23 0 .45.05.65.14.2.09.37.23.5.41l1.4 1.7c.13.18.24.38.32.57.09.2.13.43.13.68V19a1.93 1.93 0 0 1-.59 1.41A1.93 1.93 0 0 1 19 21H5Zm.4-15h13.2l-.85-1H6.25L5.4 6ZM5 19h14V8H5v11Z"></path>
-</svg>
-
-								
-
-							</span>
-						</span>
-						<span class="header__profile-text">Заказы</span>
-					</a>
-				
-					<a href="cart.html" class="header__profile-item" id="cart">
-						<span class="header__profile-icon">
-							<span class="icon">
-								
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 22c-.55 0-1.02-.2-1.41-.59-.4-.39-.59-.86-.59-1.41 0-.55.2-1.02.59-1.41.39-.4.86-.59 1.41-.59.55 0 1.02.2 1.41.59.4.39.59.86.59 1.41 0 .55-.2 1.02-.59 1.41-.39.4-.86.59-1.41.59Zm10 0c-.55 0-1.02-.2-1.41-.59-.4-.39-.59-.86-.59-1.41 0-.55.2-1.02.59-1.41.39-.4.86-.59 1.41-.59.55 0 1.02.2 1.41.59.4.39.59.86.59 1.41 0 .55-.2 1.02-.59 1.41-.39.4-.86.59-1.41.59ZM6.15 6l2.4 5h7l2.75-5H6.15ZM5.2 4h14.75c.38 0 .68.17.88.51.2.34.2.69.02 1.04l-3.55 6.4A2 2 0 0 1 15.55 13H8.1L7 15h11c.28 0 .52.1.71.29.2.19.29.43.29.71 0 .28-.1.52-.29.71-.19.2-.43.29-.71.29H7c-.75 0-1.32-.33-1.7-.99a1.89 1.89 0 0 1-.05-1.96L6.6 11.6 3 4H2a.97.97 0 0 1-.71-.29A.97.97 0 0 1 1 3c0-.28.1-.52.29-.71.19-.2.43-.29.71-.29h1.63a1 1 0 0 1 .9.58L5.2 4Z"></path></svg>
-								
-
-							</span>
-						</span>
-						<span class="header__profile-text">Корзина</span>
-					</a>
-				
-					<a href="profile.html" class="header__profile-item" id="profile">
-						<span class="header__profile-icon">
-							<span class="icon">
-								
-									<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><path d="M30 49c0 18.7 15.3 34 34 34s34-15.3 34-34-15.3-34-34-34-34 15.3-34 34zm60 0c0 14.3-11.7 26-26 26S38 63.3 38 49s11.7-26 26-26 26 11.7 26 26zm-65.6 70.4C35 108.8 49 103 64 103s29 5.8 39.6 16.4l5.7-5.7C97.2 101.7 81.1 95 64 95s-33.2 6.7-45.3 18.7l5.7 5.7z"/></svg>
-								
-
-							</span>
-						</span>
-						<span class="header__profile-text">Войти</span>
-					</a>
-				
-
-			</div>
 			<nav class="menu-main">
     <div class="menu-main__inner">
     
@@ -281,6 +230,63 @@
 
 
 
+			</div>
+
+			<div class="header__search">
+				<input class="header__search-input" type="text" placeholder="Поиск по каталогу">
+				<button class="btn header__search-button">
+					<span class="icon">
+						<svg>
+							<use xlink:href="svg/sprite.svg#search"></use>
+						</svg>
+					</span>
+				
+				</button>
+			</div>
+
+			<div class="header__profile">
+				
+					<a href="orders.html" class="header__profile-item" id="orders">
+						<span class="header__profile-icon">
+							<span class="icon">
+								
+									<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+	<path d="M5 21a1.93 1.93 0 0 1-1.41-.59A1.93 1.93 0 0 1 3 19V6.5c0-.25.04-.47.13-.68.08-.2.19-.39.32-.57l1.4-1.7c.13-.18.3-.32.5-.41.2-.1.42-.14.65-.14h12c.23 0 .45.05.65.14.2.09.37.23.5.41l1.4 1.7c.13.18.24.38.32.57.09.2.13.43.13.68V19a1.93 1.93 0 0 1-.59 1.41A1.93 1.93 0 0 1 19 21H5Zm.4-15h13.2l-.85-1H6.25L5.4 6ZM5 19h14V8H5v11Z"></path>
+</svg>
+
+								
+
+							</span>
+						</span>
+						<span class="header__profile-text">Заказы</span>
+					</a>
+				
+					<a href="cart.html" class="header__profile-item" id="cart">
+						<span class="header__profile-icon">
+							<span class="icon">
+								
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 22c-.55 0-1.02-.2-1.41-.59-.4-.39-.59-.86-.59-1.41 0-.55.2-1.02.59-1.41.39-.4.86-.59 1.41-.59.55 0 1.02.2 1.41.59.4.39.59.86.59 1.41 0 .55-.2 1.02-.59 1.41-.39.4-.86.59-1.41.59Zm10 0c-.55 0-1.02-.2-1.41-.59-.4-.39-.59-.86-.59-1.41 0-.55.2-1.02.59-1.41.39-.4.86-.59 1.41-.59.55 0 1.02.2 1.41.59.4.39.59.86.59 1.41 0 .55-.2 1.02-.59 1.41-.39.4-.86.59-1.41.59ZM6.15 6l2.4 5h7l2.75-5H6.15ZM5.2 4h14.75c.38 0 .68.17.88.51.2.34.2.69.02 1.04l-3.55 6.4A2 2 0 0 1 15.55 13H8.1L7 15h11c.28 0 .52.1.71.29.2.19.29.43.29.71 0 .28-.1.52-.29.71-.19.2-.43.29-.71.29H7c-.75 0-1.32-.33-1.7-.99a1.89 1.89 0 0 1-.05-1.96L6.6 11.6 3 4H2a.97.97 0 0 1-.71-.29A.97.97 0 0 1 1 3c0-.28.1-.52.29-.71.19-.2.43-.29.71-.29h1.63a1 1 0 0 1 .9.58L5.2 4Z"></path></svg>
+								
+
+							</span>
+						</span>
+						<span class="header__profile-text">Корзина</span>
+					</a>
+				
+					<a href="profile.html" class="header__profile-item" id="profile">
+						<span class="header__profile-icon">
+							<span class="icon">
+								
+									<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><path d="M30 49c0 18.7 15.3 34 34 34s34-15.3 34-34-15.3-34-34-34-34 15.3-34 34zm60 0c0 14.3-11.7 26-26 26S38 63.3 38 49s11.7-26 26-26 26 11.7 26 26zm-65.6 70.4C35 108.8 49 103 64 103s29 5.8 39.6 16.4l5.7-5.7C97.2 101.7 81.1 95 64 95s-33.2 6.7-45.3 18.7l5.7 5.7z"/></svg>
+								
+
+							</span>
+						</span>
+						<span class="header__profile-text">Войти</span>
+					</a>
+				
+
+			</div>
 		</div>
 
 	</div>

@@ -2,21 +2,22 @@
 @use "../mixins" as *;
 
 .menu-main {
+  display: none;
   position: absolute;
-  top: 40px;
-  left: 0;
-  right: 0;
+  top: 60px;
+  left: -12vw;
+  right: -80vw;
   bottom: 0;
   z-index: 100;
-  opacity: 0;
 
   // .menu-main__inner
   &__inner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     background-color: var(--bg-color-white);
-    height: 100vh;
+    // height: 100vh;
     padding: var(--space-medium);
+    width: 100%;
   }
 
   // .menu-main__list

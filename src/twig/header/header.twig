@@ -26,11 +26,18 @@
 		<div class="header__middle ">
 
 			<a class="header__logo" href="/"></a>
-			<button type="button" class="btn header__menu-button">
-				<span class="header__menu-button-burger"></span>
-				<span class="header__menu-button-text">Каталог</span>
+			<div class="header__button-overlay">
 
+			<button type="button" class="btn header__menu-button">
+				<div class="header__menu-burger">
+				<span class="header__menu-burger-line"></span>
+				<span class="header__menu-burger-line"></span>
+				<span class="header__menu-burger-line"></span>
+				</div>
+				<span class="header__menu-button-text">Каталог</span>
 			</button>
+			{% include "../menu-main/menu-main.twig" %}
+			</div>
 
 			<div class="header__search">
 				<input class="header__search-input" type="text" placeholder="Поиск по каталогу">
@@ -40,7 +47,7 @@
 							<use xlink:href="svg/sprite.svg#search"></use>
 						</svg>
 					</span>
-
+				
 				</button>
 			</div>
 
@@ -64,7 +71,6 @@
 				{% endfor %}
 
 			</div>
-			{% include "../menu-main/menu-main.twig" %}
 		</div>
 
 	</div>
