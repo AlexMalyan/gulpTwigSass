@@ -53,13 +53,13 @@
 
 			<div class="header__profile">
 				{% for item in menu.middle %}
-					<a href="{{ item.link}}.html" class="header__profile-item" id="{{ item.id }}">
+					<a href="{{ item.link}}.twig" class="header__profile-item" id="{{ item.id }}">
 						<span class="header__profile-icon">
 							<span class="icon">
 								{% if  item.link == 'orders' %}
 									{% include "../svg/order.svg" %}
-								{% elseif item.link == 'cart'%}
-									{% include "../svg/cart.svg" %}
+								{% elseif item.link == 'minicart'%}
+										{% include "../svg/cart.svg" %}
 								{% elseif item.link == 'profile'%}
 									{% include "../svg/account.svg" %}
 								{% endif %}

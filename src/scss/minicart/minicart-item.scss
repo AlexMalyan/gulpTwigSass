@@ -1,0 +1,58 @@
+.minicart-card {
+  border: 1px solid var(--bg-color-grey-transparent);
+  background: var(--bg-color-white-transparent);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+  transition: box-shadow var(--transition-duration);
+  &:hover {
+    box-shadow: var(--shadow-hover);
+  }
+
+  // .minicart-card__image-box
+
+  &__image-box {
+  }
+
+  // .minicart-card__image
+
+  &__image {
+  }
+
+  // .minicart-card__content
+
+  &__content {
+    padding: var(--space-medium);
+  }
+
+  // .minicart-card__title
+
+  &__title {
+  }
+
+  // .minicart-card__price
+
+  &__price {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px 0;
+  }
+
+  // .minicart-card__price-value
+
+  &__price-value {
+  }
+
+  // .minicart-card__cart-button
+
+  &__cart-button {
+    width: 100%;
+    @include button(
+      $background-color-btn,
+      $background-color-btn-hover,
+      var(--text-color-white),
+      var(--border-radius)
+    );
+  }
+}

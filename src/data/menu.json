@@ -30,7 +30,7 @@
     {
       "id": "cart",
       "title": "Корзина",
-      "link": "cart"
+      "link": "minicart"
     },
     {
       "id": "profile",
