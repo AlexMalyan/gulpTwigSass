@@ -49,11 +49,12 @@
 					</span>
 				
 				</button>
+				{% include "../base-input/base-input.twig" %}
 			</div>
 
 			<div class="header__profile">
 				{% for item in menu.middle %}
-					<a href="{{ item.link}}.twig" class="header__profile-item" id="{{ item.id }}">
+					<a href="{{ item.link}}.twig" class="header__profile-item {% if item.id == "minicart" %} show-cart {% endif %}" id="{{ item.id }}">
 						<span class="header__profile-icon">
 							<span class="icon">
 								{% if  item.link == 'orders' %}

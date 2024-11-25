@@ -28,7 +28,7 @@
       "link": "orders"
     },
     {
-      "id": "cart",
+      "id": "minicart",
       "title": "Корзина",
       "link": "minicart"
     },

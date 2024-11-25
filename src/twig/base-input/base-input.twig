@@ -1,0 +1,23 @@
+<div class="base-input">
+    <div class="base-input__inner">
+        <span class="base-input__title">
+        Возможно искали
+        </span>
+
+    {% for item in products %}
+    {% if item.rating == 4 %}
+    <div class="base-input__list">
+        <a href="{{ item.features.sku }}" class="base-input__card-link">
+            {% include "base-input-card.twig" with {
+            pr: item
+        } %}
+        </a>
+    </div>
+        {% endif %}
+    {% endfor %}
+    <a href="page-search.html" class="base-input__footer">
+    Все результаты
+    </a>
+    </div>
+</div>
+

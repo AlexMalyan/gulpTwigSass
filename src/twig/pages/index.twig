@@ -3,6 +3,7 @@
 
 
 {% block page %}
+
 	<!-- 1=include banner.html -->
 	{% include "../banner/banner.twig" %}
 	<main
@@ -26,7 +27,6 @@
 		<!--1=include about.html -->
 		{% include "../about/about.twig" %}
 
-		{% include "../minicart/minicart.twig" %}
 
 
 	<!--1=include catalog.html -->
@@ -36,4 +36,9 @@
 	</main>
 
 
+{% endblock %}
+
+
+{% block minicart %}
+		{% include "../minicart/minicart.twig" %}
 {% endblock %}

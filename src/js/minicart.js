@@ -4,13 +4,15 @@ const minicartModal = document.querySelector(".minicart");
 
 const minicartCloseButton = document.querySelector(".minicart__close");
 
-minicartCloseButton.addEventListener("click", () => {
+minicartCloseButton.addEventListener("click", (e) => {
   minicartModal.close();
 });
 
-// console.log(showCartButton);
+console.log(minicartModal);
 
-showCartButton.addEventListener("click", () => {
+showCartButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log(minicartModal);
   minicartModal.showModal();
 });
 
