@@ -1,0 +1,27 @@
+<div class="banner container-xl">
+	<div class="banner__inner">
+		<div class="swiper-wrapper">
+			{% for num in range(0, 2) %}
+				<div class="swiper-slide">
+					<picture>
+						<source srcset="./images/banner/banner{{ num + 1 }}.webp" type="image/webp">
+						<source srcset="./images/banner/banner{{ num + 1 }}.jpg" type="image/jpeg">
+						<img src="./images/banner/banner{{ num + 1 }}.jpg" alt="">
+					</picture>
+				</div>
+			{% endfor %}
+			<!-- Add more slides here -->
+		</div>
+		<!-- Add navigation buttons if needed -->
+		<button class="banner__button banner__button--prev">
+			<span class="icon" style="--icon-width: 60px">
+				{% include "../svg/arrow-left.svg" %}
+			</span>
+		</button>
+		<button class="banner__button banner__button--next">
+			<span class="icon">{% include "../svg/arrow-right.svg" %}
+			</span>
+		</button>
+
+	</div>
+</div>

@@ -1,0 +1,24 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.product {
+  // .product__swiper
+
+  &__swiper {
+    max-height: 70%;
+  }
+
+  // .product__swiper-img
+
+  &__swiper-img {
+    @include fluid-img;
+  }
+}
+
+.swiper {}
+
+.swiper-wrapper {
+  // align-items: center;
+}
+
+.swiper-slide {}

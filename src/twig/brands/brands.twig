@@ -7,9 +7,24 @@
 			<span>></span>
 		</a>
 	</header>
-	<!-- //=  include _brands-grid.html -->
+	<div class="brands-grid">
+		{% for item in brands %}
+			<div class="brand-card">
+  <img
+    class="brand-card__image"
+    src="{{ item.image }}"
+    alt="image"
+  />
+</div>
+			
+		{% endfor %}
+</div>
+
 	<div
-		class="container" style="position: relative;"><!--=include _brands-swiper.html -->
+		class="container" style="position: relative;">
+
+		<!--=include _brands-swiper.html -->
+
 	</div>
 
 

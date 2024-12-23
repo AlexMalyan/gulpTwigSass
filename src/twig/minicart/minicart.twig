@@ -1,0 +1,65 @@
+<dialog class="minicart">
+  <div class="minicart__header">
+    <h3 class="minicart__title">Товар добавлен в корзину</h3>
+    <button class="icon minicart__close">
+    {% include "../svg/close.svg" %}
+      <!--=include close.svg -->
+    </button>
+  </div>
+  <div class="minicart__body">
+    <div class="minicart__img-box">
+      <img
+        src="../images/products/product_single_1.jpg"
+        alt="title"
+        class="minicart__img-img"
+      />
+    </div>
+    <div class="minicart__content">
+      <div class="minicart__title">Шпатлевка масляно-клеевая 3кг Л-С</div>
+      <div class="minicart__article">
+        Артикул <span class="minicart__article-value">10187020</span>
+      </div>
+      <div class="minicart__price">212₽ / шт</div>
+      <div class="minicart__discount">450₽</div>
+      <div class="minicart__quantity">
+        <button class="minicart__quantity-button" data-action="minus">-</button>
+        <input class="minicart__quantity-value" data-counter="quantity"></input>
+        <button class="minicart__quantity-button" data-action="plus">+</button>
+      </div>
+    </div>
+    <div class="minicart__actions-box">
+      <button class="minicart__actions-button">Перейти в корзину</button>
+      <button class="minicart__actions-button">Продолжить покупки</button>
+      <div class="minicart__actions-info">
+        <p class="minicart__actions-info-text">
+          В вашей корзине <strong data-qa="quantity">3</strong> товара на сумму
+          <strong data-qa="total">12&nbsp;950&nbsp;</strong>р.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="minicart__footer">
+    <h4 class="minicart__footer-title">Вам также могут пригодиться</h4>
+
+    <div class="swiper-container swiper">
+      <div class="swiper-wrapper">
+      {% include "minicart-item.twig" %}
+      </div>
+
+      <div class="minicart__footer-btn minicart__footer-btn--prev">
+        <span class="icon" style="--icon-width: 24px">
+        {% include "../svg/arrow-left.svg" %}
+          <!--=include arrow-left.svg -->
+        </span>
+      </div>
+      <div class="minicart__footer-btn minicart__footer-btn--next">
+        <span class="icon" style="--icon-width: 24px">
+                {% include "../svg/arrow-right.svg" %}
+
+          <!--=include arrow-right.svg -->
+        </span>
+      </div>
+    </div>
+  </div>
+</dialog>

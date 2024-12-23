@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "mixins" as *;
+
 .catalog-head {
   // .catalog-head__inner
 
@@ -23,16 +26,4 @@
     line-height: 130%;
     @include font-family(Manrope Bold, 700);
   }
-}
-
-.breadcrumbs {
-  text-decoration: none;
-  color: inherit;
-  transition: var(--transition-duration);
-
-  &:hover {
-    color: var(--primary-color);
-  }
-
-  // .breadcrumbs__separator
 }

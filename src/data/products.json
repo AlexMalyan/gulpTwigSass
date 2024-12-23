@@ -1,11 +1,15 @@
 [
   {
-    "name": "Electric Planer Brandix KL370090G 300 Watts",
-    "price": "749.00₽",
+    "name": "Кран шаровой PP-R белый Дн 25 внутренняя пайка OPTIMA VALFEX VALF 10145025",
+    "price": "749.00 ₽",
     "compare_at_price": null,
     "rating": 4,
     "images": [
-      "images/products/product-1"
+      "images/products/product_single_1",
+      "images/products/product_single_2",
+      "images/products/product_single_5",
+      "images/products/product_single_4",
+      "images/products/product_single_6"
     ],
     "badges": [
       "new"
@@ -15,7 +19,20 @@
       "weight": "15 Kg",
       "color": "Red",
       "material": "Wood"
-    }
+    },
+    "specifications": {
+      "Гарантия": 60,
+      "Страна происхождения": "Россия",
+      "Цвет": "белый",
+      "Базовая единица": "шт",
+      "Производитель": "DIAL",
+      "Вид элемента": "кран шаровый",
+      "Материал изготовления": "полипропилен",
+      "Тип фитинга": "сварной",
+      "Подвид фитинга": "комбинированный",
+      "Диаметр": 25
+    },
+    "description": "Кран шаровый PPR предназначен для перекрытия транспортируемого в трубопроводе потока жидкости. Изделие применяется в системах отопления или водоснабжения с рабочей средой в виде воды, температура которой не выше 95 °С. Шаровые PP краны могут использоваться как с армированными полипропиленовыми трубами, так и не с армированными. Запирающая часть изделия выполнена их качественной латуни ЛС-59-2, обеспечивая надёжность и герметичность."
   },
   {
     "name": "Undefined Tool IRadix DPS3000SY 2700 Watts",
@@ -167,11 +184,11 @@
     "compare_at_price": null,
     "rating": 5,
     "images": [
-      "images/products/product-16",
-      "images/products/product-16-1",
-      "images/products/product-16-2",
-      "images/products/product-16-3",
-      "images/products/product-16-4"
+      "images/products/product_single_1",
+      "images/products/product_single_2",
+      "images/products/product_single_5",
+      "images/products/product_single_4",
+      "images/products/product_single_6"
     ]
   }
 ]

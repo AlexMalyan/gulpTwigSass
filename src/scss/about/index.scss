@@ -1,0 +1,23 @@
+.about {
+  // .about__inner
+
+  &__inner {
+    background-image: url(../images/about/about.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // .about__content
+
+  &__content {
+    width: 45%;
+  }
+
+  // .about__text
+
+  &__text {}
+}

@@ -1,0 +1,42 @@
+.base-input-card {
+  display: flex;
+  margin-top: var(--space-medium);
+  transition: var(--transition-duration);
+  border-radius: var(--border-radius);
+  &:hover {
+    color: var(--primary-color);
+    background-color: var(--primary-color-grey);
+    box-shadow: var(--shadow-hover);
+  }
+
+  // .base-input-card__image
+
+  &__image {
+    width: 100px;
+    border-radius: var(--border-radius);
+  }
+
+  // .base-input-card__content
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: var(--space-medium);
+  }
+
+  // .base-input-card__text
+
+  &__text {
+  }
+
+  // .base-input-card__text-name
+
+  &__text-name {
+  }
+
+  // .base-input-card__price
+
+  &__price {
+  }
+}

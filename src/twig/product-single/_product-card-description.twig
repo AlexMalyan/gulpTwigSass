@@ -1,0 +1,47 @@
+<div class="product__description">
+	<div
+		class="product__description-inner">
+		<!-- <button class="product__description-close"> </button> -->
+		<h2 class="product__description-title">
+			О товаре</h2>
+
+		<div class="product__description-text">
+			{{ product.description }}
+		</div>
+		<div class="product__description-specifications">
+			<h4 class="product__description-specifications-title">Характеристики</h4>
+			<table class="product__description-specifications-table">
+				<tbody
+					class="product__description-specifications-body">
+					{# ------------------------------------------------------------------ #}
+					{% for name, value in product.specifications %}
+						<tr class="product__description-specifications-tr" itemprop="additionalProperty" itemscope="" itemtype="http://schema.org/PropertyValue">
+							<td class=" product__description-specifications-name">
+								<span itemprop="name">{{ name }}</span>
+							</td>
+							<td class="product__description-specifications-value">
+								<span itemprop="value">
+									{{ value }}
+								</span>
+							</td>
+						</tr>
+					{% endfor %}
+					{# ----------------------------- #}
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div
+		class="product__description-box">
+		<!-- С картой  Пэй -->
+		<div class="product__description-price">
+			<span class="product__description-price-value">{{ product.price}}</span>
+			<span class="product__description-price-unit">/ шт</span>
+			<div class="product__description-discount">
+				<span class="product__description-discount-value">—50%</span>
+			</div>
+		</div>
+
+		<button class=" product__description-addtocart">Добавить в корзину</button>
+	</div>
+</div>

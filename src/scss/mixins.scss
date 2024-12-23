@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "variables" as *;
 
 // FONTS
 @mixin font-family($font-family: "Manrope Regular", $font-weight: 400) {
@@ -17,9 +18,7 @@
 @mixin flex-center($isInline: false) {
   @if ($isInline) {
     display: inline-flex;
-  }
-
-  @else {
+  } @else {
     display: flex;
   }
 
@@ -55,13 +54,15 @@
   background-color: transparent;
 }
 
-@mixin button($background-color: transparent,
+@mixin button(
+  $background-color: transparent,
   $background-color-hover: $background-color-btn-hover,
   $text-color: inherit,
   $border-radius: 5px,
   $border: none,
   $border-color: none,
-  $padding: 10px 20px) {
+  $padding: 10px 20px
+) {
   display: inline-block;
   padding: $padding;
   border: $border;
@@ -89,11 +90,13 @@ $background-color-hover: transparent,
  $padding: 10px 20px
 */
 
-@mixin button-plain($border: none,
+@mixin button-plain(
+  $border: none,
   $background-color-hover: transparent,
   $color: inherit,
   $font-size: var(--font-size-large),
-  $padding: 10px 20px) {
+  $padding: 10px 20px
+) {
   display: inline-block;
   padding: $padding;
   font-size: $font-size;
@@ -128,12 +131,9 @@ $background-color-hover: transparent,
   margin: 0 auto;
 }
 
-
 // MEDIA QUERIES
 @mixin mediaBg() {
-
-  @media (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     @content;
   }
 }
@@ -149,7 +149,6 @@ $background-color-hover: transparent,
     @content;
   }
 }
-
 
 $desktop-above: 1281px;
 $desktop: 1280px;
@@ -210,6 +209,4 @@ $mobile: 767px;
       @content;
     }
   }
-
-
 }

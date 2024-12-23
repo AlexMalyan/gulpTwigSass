@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "mixins" as *;
+
 .catalog-tags {
   // .catalog-tags__tag
   display: flex;

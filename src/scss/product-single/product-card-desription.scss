@@ -1,0 +1,149 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.product {
+  &__description {
+    position: relative;
+    width: 50vw;
+    height: 100%;
+    // overflow-y: hidden scroll;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -70vw;
+    z-index: 100;
+
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+
+    transition: left 0.5s;
+    box-shadow: var(--shadow);
+    background-color: var(--bg-color-white-transparent);
+
+    // .product__description-title
+    &--is-active {
+      left: 0;
+    }
+  }
+
+  &__description-inner {
+    padding: var(--space-large);
+    overflow-x: hidden;
+    scrollbar-width: none;
+  }
+
+  &__description-title {
+    // @include font-family("Manrope Bold", 700);
+
+    font-size: clamp(var(--font-size-small), 5vw, var(--font-size-title));
+    line-height: 130%;
+    padding-bottom: var(--space-large);
+  }
+
+  // .product__description-text
+
+  &__description-text {}
+
+  // .product__description-specifications
+
+  &__description-specifications {}
+
+  // .product__description-specifications-title
+
+  &__description-specifications-title {
+    font-size: clamp(var(--font-size-small), 5vw, var(--font-size-title));
+    line-height: 130%;
+    padding: var(--space-large) 0;
+  }
+
+  // .product__description-specifications-table
+
+  &__description-specifications-table {
+    width: 75%;
+    margin-inline: auto;
+    padding-bottom: var(--space-large) 0;
+  }
+
+  &__description-specifications-tr {
+    position: relative;
+  }
+
+  // .product__description-specifications-body
+
+  &__description-specifications-body {
+
+    & tr,
+    td {
+      // background-color: var(--secondary-color-grey);
+      border-bottom: 1px dotted var(--secondary-color-grey);
+      color: var(--secondary-color-grey);
+      padding: var(--space-small);
+    }
+  }
+
+  // .product__description-specifications-name
+
+  &__description-specifications-name {
+    text-align: start;
+  }
+
+  // .product__description-specifications-value
+
+  &__description-specifications-value {
+    text-align: end;
+  }
+
+  // .product__description-box
+
+  &__description-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px;
+    background-color: #fff;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  // .product__description-price
+
+  &__description-price {
+    display: flex;
+    gap: var(--space-small);
+
+    &-value,
+    &-unit {
+      @include font-family($font-family: "Inter Bold", $font-weight: 700);
+      font-size: clamp(var(--font-size-small),
+          5vw,
+          var(--font-size-medium) * 2);
+      line-height: 130%;
+      color: var(--text-color-accent);
+    }
+  }
+
+  // .product__description-addtocart
+
+  &__description-addtocart {
+    @include button($background-color-btn,
+      var(--text-color-white),
+      var(--border-radius));
+  }
+
+  &__description-discount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color-orange);
+    color: var(--text-color-white);
+    padding: 0 8px;
+    border-radius: 4px;
+
+    &-value {
+      @include font-family($font-family: "Inter Bold", $font-weight: 700);
+      font-size: clamp(var(--font-size-small), 5vw, var(--font-size-medium));
+      line-height: 130%;
+    }
+  }
+}

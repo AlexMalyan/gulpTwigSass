@@ -1,79 +1,161 @@
-  {
-    "top": [
-      {
-        "title": "Бренды",
-        "link": "brands.html"
-      },
-      {
-        "title": "Доставка",
-        "link": "delivery.html"
-      },
-      {
-        "title": "Возврат",
-        "link": "return.html"
-      },
-      {
-        "title": "Документация",
-        "link": "docs.html"
-      },
-      {
-        "title": "Контакты",
-        "link": "contacts.html"
-      }
-    ],
-    "middle": [
-      {
-        "id": "orders",
-        "title": "Заказы",
-        "link": "orders"
-      },
-      {
-        "id": "cart",
-        "title": "Корзина",
-        "link": "cart"
-      },
-      {
-        "id": "profile",
-        "title": "Войти",
-        "link": "profile"
-      }
-    ],
-    "bottom": [
-      {
-        "title": "Акции",
-        "link": "actions.html"
-      },
-      {
-        "title": "Строительные материалы",
-        "link": "materials.html"
-      },
-      {
-        "title": "Керамическая плитка",
-        "link": "catalog.html"
-      },
-      {
-        "title": "Краски",
-        "link": "catalog.html"
-      },
-      {
-        "title": "Сантехника",
-        "link": "catalog.html"
-      },
-      {
-        "title": "Напольные покрытия",
-        "link": "catalog.html"
-      },
-      {
-        "title": "Инструменты",
-        "link": "catalog.html"
-      },
-      {
-        "title": "Обои",
-        "link": "catalog.html"
-      },
-      {
-        "title": "Окна",
-        "link": "catalog.html"
-      }
-    ]
-  }
+{
+  "top": [
+    {
+      "title": "Бренды",
+      "link": "brandg"
+    },
+    {
+      "title": "Доставка",
+      "link": "deliverg"
+    },
+    {
+      "title": "Возврат",
+      "link": "returg"
+    },
+    {
+      "title": "Документация",
+      "link": "docg"
+    },
+    {
+      "title": "Контакты",
+      "link": "contactg"
+    }
+  ],
+  "middle": [
+    {
+      "id": "orders",
+      "title": "Заказы",
+      "link": "orders"
+    },
+    {
+      "id": "minicart",
+      "title": "Корзина",
+      "link": "minicart"
+    },
+    {
+      "id": "profile",
+      "title": "Войти",
+      "link": "profile"
+    }
+  ],
+  "bottom": [
+    {
+      "title": "Акции",
+      "link": "actiong"
+    },
+    {
+      "title": "Строительные материалы",
+      "link": "materialg"
+    },
+    {
+      "title": "Керамическая плитка",
+      "link": "catalog"
+    },
+    {
+      "title": "Краски",
+      "link": "catalog"
+    },
+    {
+      "title": "Сантехника",
+      "link": "catalog"
+    },
+    {
+      "title": "Напольные покрытия",
+      "link": "catalog"
+    },
+    {
+      "title": "Инструменты",
+      "link": "catalog"
+    },
+    {
+      "title": "Обои",
+      "link": "catalog"
+    },
+    {
+      "title": "Окна",
+      "link": "catalog"
+    }
+  ],
+  "sidebar": [
+    {
+      "title": "Водонагреватели",
+      "link": "catalog"
+    },
+    {
+      "title": "Канализация",
+      "link": "catalog",
+      "submenu": [
+        {
+          "title": "Drains",
+          "url": ""
+        },
+        {
+          "title": "Drains",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Коллекторы",
+      "link": "catalog"
+    },
+    {
+      "title": "Подводка для воды и газа",
+      "link": "catalog",
+      "submenu": [
+        {
+          "title": "Engravers",
+          "url": ""
+        },
+        {
+          "title": "Drills",
+          "url": ""
+        },
+        {
+          "title": "Wrenches",
+          "url": ""
+        },
+        {
+          "title": "Plumbing",
+          "url": ""
+        },
+        {
+          "title": "Wall Chaser",
+          "url": ""
+        },
+        {
+          "title": "Pneumatic Tools",
+          "url": ""
+        },
+        {
+          "title": "Milling Cutters",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Полотенцесушители",
+      "link": "catalog"
+    },
+    {
+      "title": "Счетчики воды и газа",
+      "link": "catalog"
+    },
+    {
+      "title": "Трубы и фитинги",
+      "link": "catalog"
+    },
+    {
+      "title": "Резьбовые соединения",
+      "link": "catalog"
+    },
+    {
+      "title": "Теплоносители",
+      "link": "catalog"
+    },
+    {
+      "title": "Фильтры и водоподготовка",
+      "link": "catalog"
+    }
+  ]
+}

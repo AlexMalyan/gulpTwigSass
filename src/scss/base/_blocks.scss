@@ -1,5 +1,5 @@
-@use 'variables' as *;
-@use 'mixins' as *;
+@use "variables" as *;
+@use "mixins" as *;
 
 .title-block {
   background-image: var(--title-background);
@@ -27,11 +27,22 @@
   justify-content: space-between;
   margin-bottom: 20px;
 
+  &__box {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+  }
+
   &__title {
     @include font-family(Inter Bold, 700);
     color: var(--text-color-dark);
     font-size: 26px;
     // line-height: 130%;
+
+    &-link {
+      color: inherit;
+      font-size: 16px;
+    }
   }
 
   &__link-button {
@@ -56,5 +67,5 @@
 }
 
 .section-block {
-  margin-top: 60px;
+  margin: 40px 0;
 }

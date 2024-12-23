@@ -1,12 +1,24 @@
-@use 'normalize';
-@use 'base';
+@use "normalize";
+@use "base";
 
-@use 'fonts/fonts';
+@use "fonts/fonts";
 
-@use 'header';
-@use 'categories';
-@use 'brands';
-@use 'futures-products';
+// VENDORS
+@use "../../node_modules/swiper/swiper.min.css";
 
+// LAYOUT
+@use "header";
+@use "menu-main";
+@use "banner";
+@use "categories";
+@use "brands";
+@use "futures-products";
+@use "about";
+@use "breadcrumbs";
+@use "catalog";
+@use "stocks";
+@use "product-single";
+@use "minicart";
+@use "base-input";
 
-@use 'footer';
+@use "footer";

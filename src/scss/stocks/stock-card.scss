@@ -1,0 +1,93 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.card-h {
+  min-height: 208px;
+  height: 100%;
+  display: flex;
+  border: 1px solid var(--bg-color-grey-transparent);
+  background: var(--bg-color-white-transparent);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+  transition: box-shadow var(--transition-duration);
+  // .card-h__image-box.
+
+  &:hover {
+    box-shadow: var(--shadow-hover);
+  }
+
+  &__image-box {
+    position: relative;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  // .card-h__widget
+
+  &__widget {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color-white-transparent);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+  }
+
+  // .card-h__image
+
+  &__image {
+    @include fluid-img;
+  }
+
+  // .card-h__content
+
+  &__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: calc(var(--space-medium) + 10px);
+  }
+
+  // .card-h__title
+
+  &__title {
+  }
+
+  // .card-h__price
+
+  &__price {
+  }
+
+  // .card-h__price-value
+
+  &__price-value {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  // .card-h__price-old
+
+  &__price-old {
+    color: var(--text-color-grey);
+  }
+
+  // .card-h__cart-button
+
+  &__cart-button {
+    // $background-color, $text-color, $border-radius
+    @include button(
+      $background-color-btn,
+      $background-color-btn-hover,
+      var(--text-color-white),
+      var(--border-radius)
+    );
+  }
+}

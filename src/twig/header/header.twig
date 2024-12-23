@@ -24,11 +24,21 @@
 	<!--=include middle.html -->
 	<div class="container-xl">
 		<div class="header__middle ">
+
 			<a class="header__logo" href="/"></a>
+			<div class="header__button-overlay">
+
 			<button type="button" class="btn header__menu-button">
-				<span class="header__menu-button-burger"></span>
+				<div class="header__menu-burger">
+				<span class="header__menu-burger-line"></span>
+				<span class="header__menu-burger-line"></span>
+				<span class="header__menu-burger-line"></span>
+				</div>
 				<span class="header__menu-button-text">Каталог</span>
 			</button>
+			{% include "../menu-main/menu-main.twig" %}
+			</div>
+
 			<div class="header__search">
 				<input class="header__search-input" type="text" placeholder="Поиск по каталогу">
 				<button class="btn header__search-button">
@@ -37,19 +47,20 @@
 							<use xlink:href="svg/sprite.svg#search"></use>
 						</svg>
 					</span>
-
+				
 				</button>
+				{% include "../base-input/base-input.twig" %}
 			</div>
 
 			<div class="header__profile">
 				{% for item in menu.middle %}
-					<a href="{{ item.link}}.html" class="header__profile-item" id="{{ item.id }}">
+					<a href="{{ item.link}}.twig" class="header__profile-item {% if item.id == "minicart" %} show-cart {% endif %}" id="{{ item.id }}">
 						<span class="header__profile-icon">
 							<span class="icon">
 								{% if  item.link == 'orders' %}
 									{% include "../svg/order.svg" %}
-								{% elseif item.link == 'cart'%}
-									{% include "../svg/cart.svg" %}
+								{% elseif item.link == 'minicart'%}
+										{% include "../svg/cart.svg" %}
 								{% elseif item.link == 'profile'%}
 									{% include "../svg/account.svg" %}
 								{% endif %}
@@ -62,6 +73,7 @@
 
 			</div>
 		</div>
+
 	</div>
 
 	{# Bottom menu #}

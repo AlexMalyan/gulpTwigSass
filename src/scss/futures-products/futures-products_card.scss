@@ -3,12 +3,16 @@
 
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   border: 1px solid var(--bg-color-grey-transparent);
   background: var(--bg-color-white-transparent);
   box-shadow: var(--shadow);
   border-radius: var(--border-radius);
   transition: box-shadow var(--transition-duration);
-  padding: var(--space-large);
+  padding: var(--space-medium);
 
   & a {
     text-decoration: none;
@@ -36,7 +40,9 @@
 
   // .card__title
 
-  &__title {}
+  &__title {
+    font-size: medium;
+  }
 
   // .card__price
 

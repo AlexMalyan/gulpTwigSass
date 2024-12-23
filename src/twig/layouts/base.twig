@@ -18,6 +18,12 @@
 		{% block header %}
 			{% include "../header/header.twig" %}
 			<!--=include header.html -->
+			
+
+		{% endblock %}
+
+		{% block breadcrumbs %}
+			{% include "../breadcrumbs/breadcrumbs.twig" %}
 		{% endblock %}
 
 		{% block page %}{% endblock %}
@@ -30,7 +36,7 @@
 		{% block modal %}<!--1=include modal-signin.html -->{% endblock %}
 
 		{% block scripts %}
-			<script src="js/script.min.js"></script>
+			<script src="js/scripts.min.js" type="module"></script>
 		{% endblock %}
 
 		{% block minicart %}

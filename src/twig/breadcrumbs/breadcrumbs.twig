@@ -1,0 +1,12 @@
+<nav class="container-xl breadcrumbs">
+	<ul class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+		{% for key, item in breadcrumbs %}
+			<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a class="breadcrumbs__link" href="{{ item.url }}" itemprop="item">
+					<span itemprop="name">{{ item.name  }}</span>
+				</a>
+				<meta itemprop="position" content={{ key + 1 }}>
+			</li>
+		{% endfor %}
+	</ul>
+</nav>

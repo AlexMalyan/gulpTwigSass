@@ -1,0 +1,115 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.buy-one-click {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-width: 378px;
+
+  border: none;
+  border-radius: var(--border-radius);
+
+  &[open] {
+    opacity: 1;
+    pointer-events: inherit;
+  }
+
+  &[open]::backdrop {
+    background: linear-gradient(
+      45deg,
+      rgba(146, 228, 111, 0.6) 0%,
+      rgba(72, 108, 191, 0.6) 50%,
+      rgba(177, 48, 169, 0.6) 100%
+    );
+
+    backdrop-filter: blur(2px);
+  }
+
+  &__box {
+    min-height: 50px;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid var(--primary-color);
+  }
+
+  &__text {
+    font-size: var(--font-size-medium);
+    color: var(--text-color-grey);
+    align-self: baseline;
+  }
+
+  &__btn-box {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  &__btn-buy {
+    @include button(
+      $background-color: $background-color-btn,
+      $text-color: var(--text-color-white),
+      $border-radius: 8px,
+      $padding: 8px 12px
+    );
+  }
+
+  &__btn-cancel {
+    @include button(
+      $background-color: $primary-color-darken,
+      $text-color: var(--text-color-white),
+      $border-radius: 8px,
+      $padding: 8px 12px
+    );
+  }
+
+  &__form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: var(--space-medium);
+
+    padding: 20px;
+  }
+
+  // .buy-one-click__input-group
+
+  &__input-group {
+    width: 100%;
+  }
+
+  // .buy-one-click__label
+
+  &__label {
+    font-size: var(--font-size-small);
+    color: var(--text-color-grey);
+    margin-bottom: 10px;
+  }
+
+  // .buy-one-click__input
+
+  &__input {
+    background: var(--primary-color-grey);
+    width: 100%;
+    font-size: var(--font-size-small);
+    padding: 8px 13px 7px;
+    border: 1px solid var(--primary-color-grey);
+    border-radius: 5px;
+
+    &:focus {
+      border-color: var(--border-color-grey);
+      box-shadow: 0 0 10px rgba(60, 7, 176, 0.1);
+    }
+  }
+}

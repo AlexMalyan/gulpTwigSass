@@ -1,11 +1,17 @@
 {# index.twig #}
 {% extends "../layouts/base.twig" %}
 
+
 {% block page %}
+
 	<!-- 1=include banner.html -->
+	{% include "../banner/banner.twig" %}
 	<main
 		class="main">
+	
+
 		<!--1=include stocks.html -->
+		{% include "../stocks/stocks.twig" %}
 
 		{% include "../categories/popular-categories.twig" with {
 	categories: block_categories.categories
@@ -16,9 +22,23 @@
 		} %}
 
 		{% include "../brands/brands.twig" %}
-	<!--1=include about.html -->
-		<!--1=include catalog.html -->
+
+
+		<!--1=include about.html -->
+		{% include "../about/about.twig" %}
+
+
+
+	<!--1=include catalog.html -->
 		<!--1=include refund.html -->
+
+
 	</main>
 
+
+{% endblock %}
+
+
+{% block minicart %}
+		{% include "../minicart/minicart.twig" %}
 {% endblock %}

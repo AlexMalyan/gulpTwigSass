@@ -1,0 +1,42 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.base-input {
+  position: absolute;
+  top: 80px;
+  left: 25vw;
+  right: 17vw;
+  bottom: 0;
+  z-index: 100;
+  // .base-input__inner
+
+  &__inner {
+    background-color: var(--bg-color-white);
+    border-radius: var(--border-radius);
+    padding: var(--space-medium);
+  }
+
+  &__link {
+  }
+  // .base-input__title
+
+  &__title {
+  }
+
+  // .base-input__card-inner
+
+  &__card-inner {
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--text-color-white);
+    padding: var(--space-small);
+    margin-top: var(--space-medium);
+    border-radius: var(--border-radius);
+    
+  }
+}

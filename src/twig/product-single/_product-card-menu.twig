@@ -1,0 +1,31 @@
+<div class="product__menu-block">
+	<ul class="product__menu-list">
+
+		{% for item in menu.sidebar %}
+			{% set submenu = item.submenu %}
+
+			<li class="product__menu-item {{ item.submenu ? 'product__menu-item--has-sub' }}">
+				<a href="{{ item.link ~ '.html' }}" class="product__menu-link">
+					{{ item.title }}
+					<span class="icon product__menu-icon  {{ item.submenu ? 'product__menu-icon--active' }} " data-icon="false">
+						{% include "../svg/arrow-right.svg" %}
+					</span>
+				</a>
+				{% if submenu %}
+
+					<ul class="product__menu-sublist">
+						{% for sub in submenu %}
+							<li class="product__menu-subitem">
+								<a href="" class="product__menu-sublink">{{ sub.title }}
+								</a>
+							</li>
+						{% endfor %}
+					</ul>
+
+				{% endif %}
+			</li>
+		{% endfor %}
+
+
+	</ul>
+</div>
